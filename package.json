@@ -1,5 +1,9 @@
 {
   "name": "portfolio",
+  "author": {
+    "name": "Luis Lopez Huari",
+    "email": "luislopezhuari27@gmail.con"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +13,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/drawer": "^2.2.8",
+    "@heroui/system": "^2.4.7",
+    "@heroui/theme": "^2.4.6",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.0",
+    "mini-svg-data-uri": "^1.4.4",
+    "next": "15.1.6",
+    "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "use-local-storage-state": "^19.5.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^9",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.19.0",
     "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
   }
 }

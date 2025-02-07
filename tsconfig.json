@@ -18,8 +18,19 @@
         "name": "next"
       }
     ],
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "baseUrl": ".",
     "paths": {
-      "components/*": ["./*"]
+      "@components/*": ["components/*"],
+      "@contents/*": ["contents/*"],
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "layouts/*": ["layouts/*"],
+      "@styles/*": ["styles/*"],
+      "@helpers/*": ["helpers/*"],
+      "@types/*": ["types/*"],
+      "@providers/*": ["providers/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
