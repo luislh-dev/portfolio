@@ -8,6 +8,7 @@ import QuickAccess from '@components/QuickAccess';
 import Shortcuts from '@components/Shortcuts';
 import { GA_ID } from '@config/Google';
 import '@styles/main.css';
+import { Metadata } from 'next';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -18,6 +19,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
 });
+
+export const metadata: Metadata = {
+  title: 'Luis Lopez ·  Full Stack Developer',
+  description:
+    'Portafolio en línea que presenta una muestra de mis proyectos y habilidades como desarrollador Full Stack. Apasionado por superar mis límites y enfrentar nuevos desafíos.',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
