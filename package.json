@@ -16,6 +16,7 @@
     "@heroui/drawer": "^2.2.8",
     "@heroui/system": "^2.4.7",
     "@heroui/theme": "^2.4.6",
+    "@next/third-parties": "^15.1.6",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.0",
     "mini-svg-data-uri": "^1.4.4",
