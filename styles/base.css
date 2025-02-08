@@ -1,0 +1,37 @@
+@tailwind base;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    @apply scroll-smooth;
+  }
+
+  html,
+  body,
+  #__next,
+  #__root {
+    @apply h-full;
+  }
+
+  #__root {
+    @apply flex flex-col font-sans;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  body {
+    @apply bg-white text-slate-900;
+    @apply dark:bg-slate-900 dark:text-slate-200 dark:[color-scheme:dark];
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
