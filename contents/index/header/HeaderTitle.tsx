@@ -74,9 +74,9 @@ function HeaderTitle() {
           <strong className='font-bold lowercase text-slate-700 dark:text-slate-300'>
             Desarrollador Full-Stack
           </strong>{' '}
-          apasionado por superar mis límites{' '}
-          <span className='block'> y enfrentar nuevos desafíos, creando soluciones</span>
-          <span className='block'> innovadoras y robustas.</span>
+          apasionado por crear soluciones{' '}
+          <span className='block'>eficientes e innovadoras, siempre dispuesto a enfrentar</span>
+          <span className='block'> nuevos desafíos y superar mis límites.</span>
         </m.h1>
       </span>
     </div>
