@@ -20,5 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      priority: 0.8,
+    },
   ];
 }
