@@ -22,7 +22,7 @@ interface HeaderCtaProps {
 
 function ButtonContactMe() {
   return (
-    <Link href='/work/contact' className='button button--solid md:button--big min-w-[128px]'>
+    <Link href='/contact' className='button button--solid md:button--big min-w-[128px]'>
       Contáctame 📩
     </Link>
   );
