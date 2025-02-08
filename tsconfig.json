@@ -18,9 +18,10 @@
         "name": "next"
       }
     ],
-    "typeRoots": ["./node_modules/@types", "./types"],
+    "typeRoots": ["./node_modules/@types", "./types", "mdx-env.d.ts"],
     "baseUrl": ".",
     "paths": {
+      "@*": ["*"],
       "@components/*": ["components/*"],
       "@contents/*": ["contents/*"],
       "@pages/*": ["pages/*"],
@@ -31,9 +32,16 @@
       "@helpers/*": ["helpers/*"],
       "@types/*": ["types/*"],
       "@providers/*": ["providers/*"],
-      "@config/*": ["config/*"]
+      "@config/*": ["config/*"],
+      "@markdown/*": ["markdown/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "app/contact/page.mdx"
+  ],
   "exclude": ["node_modules"]
 }

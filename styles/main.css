@@ -1,4 +1,8 @@
 @import 'base.css';
 @import 'components.css';
 
+@import 'mdx-contents.css';
+
+@import 'mdx-components.css';
+
 @tailwind utilities;
