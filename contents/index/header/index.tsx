@@ -17,7 +17,7 @@ function Header() {
           <div className='mt-20 lg:mt-36'>
             <HeaderTechStack />
           </div>
-          <div className='pointer-events-none absolute -top-36 right-0 z-0 hidden select-none lg:block'>
+          <div className='pointer-events-none absolute -top-36 right-0 z-0 -mr-4 hidden select-none lg:block'>
             <HeaderImage />
           </div>
         </div>
