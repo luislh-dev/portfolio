@@ -50,6 +50,9 @@ function NavBar() {
               <li>
                 <NavLink title='Experiencia' href='/experience' />
               </li>
+              <li>
+                <NavLink title='Contacto' href='/contact' />
+              </li>
             </ul>
           </nav>
           <ul className='flex items-center'>
