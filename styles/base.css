@@ -10,10 +10,6 @@
   body,
   #__next,
   #__root {
-    @apply h-full;
-  }
-
-  #__root {
     @apply flex flex-col font-sans;
   }
 
