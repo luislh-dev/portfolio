@@ -1,5 +1,6 @@
 import Navigation from '@components/navigation';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import { JetBrains_Mono, Plus_Jakarta_Sans } from 'next/font/google';
 import Provider from 'providers';
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </Provider>
         <GoogleAnalytics gaId={GA_ID} />
+        <Analytics />
       </body>
     </html>
   );
