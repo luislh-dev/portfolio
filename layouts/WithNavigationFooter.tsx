@@ -1,3 +1,4 @@
+import Footer from '@components/footer';
 import Navigation from '@components/navigation';
 import QuickAccess from '@components/QuickAccess';
 import Shortcuts from '@components/Shortcuts';
@@ -10,6 +11,7 @@ function WithNavigationFooter({ children }: PropsWithChildren) {
       <Shortcuts />
       <QuickAccess />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }
