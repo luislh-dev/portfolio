@@ -7,6 +7,8 @@ import Provider from 'providers';
 import QuickAccess from '@components/QuickAccess';
 import Shortcuts from '@components/Shortcuts';
 import { GA_ID } from '@config/Google';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@config/Site';
+import { getBaseUrl } from '@helpers/url';
 import '@styles/main.css';
 import { Metadata } from 'next';
 
@@ -21,9 +23,23 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Luis Lopez ·  Full Stack Developer',
-  description:
-    'Portafolio en línea que presenta una muestra de mis proyectos y habilidades como desarrollador Full Stack. Apasionado por superar mis límites y enfrentar nuevos desafíos.',
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: 'website',
+    siteName: SITE_TITLE,
+    locale: 'es',
+    title: SITE_TITLE,
+    images: [
+      {
+        url: `${getBaseUrl()}/images/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: SITE_TITLE,
+        type: 'image/png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
