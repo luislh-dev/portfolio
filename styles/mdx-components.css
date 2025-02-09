@@ -10,7 +10,7 @@
     @apply relative;
 
     &::before {
-      @apply absolute inset-0 -inset-x-2 z-[-1] origin-left scale-x-0 bg-blue-300 content-[''];
+      @apply absolute inset-0 -inset-x-2 origin-left scale-x-0 bg-blue-300/20 content-[''];
       @apply dark:bg-blue-400/40;
     }
   }

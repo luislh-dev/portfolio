@@ -176,7 +176,7 @@
     }
 
     &::after {
-      @apply absolute bottom-1 left-0 right-0 z-[-1] h-2 origin-bottom scale-y-[.4] bg-blue-600/20 transition-transform content-[''];
+      @apply absolute bottom-1 left-0 right-0 h-2 origin-bottom scale-y-[.4] bg-blue-600/20 transition-transform content-[''];
     }
   }
 
