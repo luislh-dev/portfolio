@@ -1,15 +1,13 @@
-import Navigation from '@components/navigation';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import { JetBrains_Mono, Plus_Jakarta_Sans } from 'next/font/google';
 import Provider from 'providers';
 
-import QuickAccess from '@components/QuickAccess';
-import Shortcuts from '@components/Shortcuts';
 import { GA_ID } from '@config/Google';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@config/Site';
 import { getBaseUrl } from '@helpers/url';
+import WithNavigationFooter from '@layouts/WithNavigationFooter';
 import '@styles/main.css';
 import { Metadata } from 'next';
 
@@ -49,10 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Provider>
           <div id='__root' className={clsx(jetbrainsMono.variable, plusJakartaSans.variable)}>
-            <Navigation />
-            <Shortcuts />
-            <QuickAccess />
-            <main>{children}</main>
+            <WithNavigationFooter>{children}</WithNavigationFooter>
           </div>
         </Provider>
         <GoogleAnalytics gaId={GA_ID} />
