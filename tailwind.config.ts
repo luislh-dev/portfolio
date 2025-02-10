@@ -13,6 +13,7 @@ export default {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     'components/**/*.{js,ts,jsx,tsx,mdx}',
     'contents/**/*.{js,ts,jsx,tsx,mdx}',
+    'contents-layouts/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@heroui/theme/dist/components/drawer.js',
     'markdown/**/*.{js,ts,jsx,tsx,mdx}',
     'layouts/**/*.{js,ts,jsx,tsx,mdx}',

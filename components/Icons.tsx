@@ -129,6 +129,52 @@ export const X = ({ ...props }: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const ChevronRight = ({ ...props }: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 20 20'
+    fill='currentColor'
+    role='img'
+    {...props}
+  >
+    <path d='M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z' />
+  </svg>
+);
+
+export const Globe = ({ ...props }: SVGProps<SVGSVGElement>) => (
+  <svg
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+    role='img'
+    {...props}
+  >
+    <path
+      d='M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5C6.75329 2.5 2.5 6.75329 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5Z'
+      stroke='currentColor'
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+    <path
+      d='M12 21.5C14.3319 21.5 16.2222 17.2467 16.2222 12C16.2222 6.75329 14.3319 2.5 12 2.5C9.66812 2.5 7.77776 6.75329 7.77776 12C7.77776 17.2467 9.66812 21.5 12 21.5Z'
+      stroke='currentColor'
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+    <path
+      d='M2.5 12H21.5'
+      stroke='currentColor'
+      strokeWidth='1.5'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    />
+  </svg>
+);
+
 export const Eye = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
