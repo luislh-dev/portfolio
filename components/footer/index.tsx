@@ -34,7 +34,7 @@ function Footer() {
                     {
                       title: 'Proyectos',
                       href: '/projects',
-                      label: 'soon',
+                      label: 'new',
                     },
                   ]}
                 />
