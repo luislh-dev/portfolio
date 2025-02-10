@@ -33,7 +33,7 @@ function ButtonResume() {
     <a
       target='_blank'
       rel='noreferrer nofollow'
-      href='https://cv.luislh.dev/LuisLopez_cv.pdf'
+      href='https://cv.luislh.dev/'
       className='button button--ghost md:button--big px-2 md:px-2'
     >
       <DocumentIcon className='h-5 w-5' />
