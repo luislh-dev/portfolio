@@ -1,7 +1,7 @@
 import PageHeader from '@components/PageHeader';
 import WithTableOfContents from '@layouts/WithTableOfContents';
-import { PropsWithChildren } from '@node_modules/@types/react';
-import { TProjectFrontMatter, TTableOfContents } from '@types';
+import type { TProjectFrontMatter, TTableOfContents } from '@types';
+import type { PropsWithChildren } from 'react';
 import ProjectMeta from './ProjectMeta';
 
 interface ProjectLayoutProps {

@@ -1,10 +1,10 @@
 import { generateSlug } from '@helpers/mdx';
-import { TProjectFrontMatter } from '@types';
-import { readFile } from 'fs/promises';
+import type { TProjectFrontMatter } from '@types';
 import matter from 'gray-matter';
-import { toString } from 'mdast-util-to-string';
+import { toString as convertString } from 'mdast-util-to-string';
 import { serialize } from 'next-mdx-remote/serialize';
-import path from 'path';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import rehypeSlug from 'rehype-slug';
 import { remark } from 'remark';
 import { visit } from 'unist-util-visit';
@@ -19,10 +19,10 @@ export async function loadMDXContent(fileRelativePath: string) {
   const frontmatter = data as TProjectFrontMatter;
 
   // Generar tabla de contenidos a partir del contenido Markdown
-  let tableOfContents: Array<{ title: string; depth: number; slug: string }> = [];
+  const tableOfContents: Array<{ title: string; depth: number; slug: string }> = [];
   const tocProcessor = remark().use(() => (tree) => {
     visit(tree, 'heading', (node: { depth: number }) => {
-      const title = toString(node);
+      const title = convertString(node);
       const headingSlug = generateSlug(title);
       tableOfContents.push({
         title,

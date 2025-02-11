@@ -1,6 +1,6 @@
 import PageHeader from '@components/PageHeader';
-import { PropsWithChildren, ReactNode } from '@node_modules/@types/react';
-import { TPageFrontMatter } from '@types';
+import type { TPageFrontMatter } from '@types';
+import type { PropsWithChildren, ReactNode } from 'react';
 
 interface PageProps {
   frontMatter: TPageFrontMatter;

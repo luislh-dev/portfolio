@@ -1,7 +1,7 @@
 'use client';
 
 import { Skeleton } from '@components/wireframes/Skeleton';
-import { Contributor } from '@types';
+import type { Contributor } from '@types';
 import { useEffect, useState } from 'react';
 
 interface ContribuitorProps {
@@ -35,7 +35,7 @@ export default function Contributors({ owner, repo }: ContribuitorProps) {
       {loading ? (
         // Skeleton loading state
         Array.from({ length: 2 }).map((_, index) => (
-          <Skeleton key={index} shape='circle' w={48} h={48} isLoading={loading} />
+          <Skeleton key={index.toString()} shape='circle' w={48} h={48} isLoading={loading} />
         ))
       ) : contributors.length > 0 ? (
         contributors.map((contributor) => (

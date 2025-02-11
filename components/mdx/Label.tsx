@@ -11,7 +11,7 @@ export function Label({ indicator = 0, children }: PropsWithChildren<LabelProps>
   const stringPorcentage = porcentage ? `${porcentage}%` : '';
 
   return (
-    <span className='label' role='status'>
+    <span className='label'>
       {children}
       <span className='label__indicator' style={{ width: `${stringPorcentage}` }} />
     </span>

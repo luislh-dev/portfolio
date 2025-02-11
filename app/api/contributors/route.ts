@@ -25,7 +25,7 @@ export async function GET(req: Request): Promise<Response> {
 
     const contributors = await response.json();
     return Response.json(contributors);
-  } catch (error) {
+  } catch {
     return new Response('Error interno del servidor', { status: 500 });
   }
 }

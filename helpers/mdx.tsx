@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import slug from 'slug';
 
 export const getSlug = (children: ReactNode) => {

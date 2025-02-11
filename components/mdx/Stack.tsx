@@ -1,4 +1,4 @@
-import { PropsWithChildren } from '@node_modules/@types/react';
+import type { PropsWithChildren } from 'react';
 
 interface StackProps {
   spacing: number;

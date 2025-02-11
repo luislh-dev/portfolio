@@ -75,7 +75,7 @@ function TableOfContents({ items = [] }: TableOfContensProps) {
       <div className={clsx('relative p-3 py-4')}>
         <ol className={clsx('toc flex flex-col gap-2')}>
           {items.map(({ title, depth, slug }) => {
-            const isActive = currentVisibles && currentVisibles[slug];
+            const isActive = currentVisibles?.[slug];
 
             return (
               <li key={slug}>
