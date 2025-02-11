@@ -15,10 +15,14 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const { slug } = await params;
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
 
-  const fileRelativePath = path.join('markdown/projects', `${slug}.mdx`);
+export default async function ProjectPage({ params }: PageProps) {
+  const fileRelativePath = path.join('markdown/projects', `${params.slug}.mdx`);
   const { mdxSource, tableOfContents, frontmatter } = await loadMDXContent(fileRelativePath);
 
   return (
