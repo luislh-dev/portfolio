@@ -2,6 +2,7 @@
 
 import { Skeleton } from '@components/wireframes/Skeleton';
 import type { Contributor } from '@types';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 interface ContribuitorProps {
@@ -41,10 +42,12 @@ export default function Contributors({ owner, repo }: ContribuitorProps) {
         contributors.map((contributor) => (
           <div key={contributor.id} className=''>
             <a href={contributor.html_url} target='_blank' rel='noopener noreferrer'>
-              <img
+              <Image
                 src={contributor.avatar_url}
                 alt={contributor.login}
-                className='h-12 w-12 rounded-full'
+                className='rounded-full'
+                width={48}
+                height={48}
               />
             </a>
           </div>
