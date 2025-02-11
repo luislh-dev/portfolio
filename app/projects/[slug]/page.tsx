@@ -18,9 +18,16 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 type Params = Promise<{ slug: string }>;
 
 export default async function ProjectPage(props: { params: Params }) {
-  const { slug } = await props.params;
+  const params = props.params;
+  const fileRelativePath = path.join(
+    process.cwd(),
+    'markdown/projects',
+    `${(await params).slug}.mdx`
+  );
 
-  const fileRelativePath = path.join('markdown/projects', `${slug}.mdx`);
+  console.log('Attempting to load file:', fileRelativePath);
+  console.log('Current working directory:', process.cwd());
+
   const { mdxSource, tableOfContents, frontmatter } = await loadMDXContent(fileRelativePath);
 
   return (

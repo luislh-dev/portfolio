@@ -4,15 +4,13 @@ import matter from 'gray-matter';
 import { toString as convertString } from 'mdast-util-to-string';
 import { serialize } from 'next-mdx-remote/serialize';
 import { readFile } from 'node:fs/promises';
-import path from 'node:path';
 import rehypeSlug from 'rehype-slug';
 import { remark } from 'remark';
 import { visit } from 'unist-util-visit';
 
 export async function loadMDXContent(fileRelativePath: string) {
   // Leer archivo MDX
-  const filePath = path.join(process.cwd(), fileRelativePath);
-  const fileContent = await readFile(filePath, 'utf8');
+  const fileContent = await readFile(fileRelativePath, 'utf8');
 
   // Extraer frontmatter y contenido
   const { content, data } = matter(fileContent);
