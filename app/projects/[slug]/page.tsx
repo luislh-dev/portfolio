@@ -4,7 +4,7 @@ import { loadMDXContent } from '@lib/load-mdx-content';
 import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const projectsDir = path.join(process.cwd(), 'contents/projects');
   const files = await readdir(projectsDir);
 
@@ -15,14 +15,12 @@ export async function generateStaticParams() {
     }));
 }
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
+type Params = Promise<{ slug: string }>;
 
-export default async function ProjectPage({ params }: PageProps) {
-  const fileRelativePath = path.join('markdown/projects', `${params.slug}.mdx`);
+export default async function ProjectPage(props: { params: Params }) {
+  const { slug } = await props.params;
+
+  const fileRelativePath = path.join('markdown/projects', `${slug}.mdx`);
   const { mdxSource, tableOfContents, frontmatter } = await loadMDXContent(fileRelativePath);
 
   return (
