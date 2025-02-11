@@ -51,6 +51,7 @@ function HeaderTitle() {
                 rotate: 0,
               });
             }}
+            loading='eager'
             priority
           />
         </m.div>

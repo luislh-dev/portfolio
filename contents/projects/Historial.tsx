@@ -19,6 +19,7 @@ function HistorialProject() {
         caption='historial-plus'
         description='Sistema web para la gestión de historiales médicos, diseñado para permitir a los pacientes
 acceder a sus registros clínicos, incluyendo imágenes y documentos médicos.'
+        button={{ title: 'Ver proyecto', href: '/projects/historial' }}
       />
       <SectionContent>
         <div className='flex lg:gap-12'>

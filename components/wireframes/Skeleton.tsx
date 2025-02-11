@@ -22,6 +22,11 @@ interface SkeletonProps {
    * Clases personalizadas para el skeleton.
    */
   className?: string;
+
+  /*
+   * Indica si el skeleton debe tener una animación de carga.
+   */
+  isLoading?: boolean;
 }
 
 export function Skeleton({
@@ -31,6 +36,7 @@ export function Skeleton({
   shape = 'default',
   className = '',
   children = null,
+  isLoading = false,
 }: PropsWithChildren<SkeletonProps>) {
   // Definir estilos base según el tamaño si no se pasan valores explícitos
   const defaultHeight = size === 'sm' ? 16 : 24; // Altura en píxeles
@@ -45,7 +51,8 @@ export function Skeleton({
   const combinedClassName = clsx(
     'flex items-center bg-slate-200/80 dark:bg-slate-100/5',
     borderRadius,
-    className
+    className,
+    isLoading && 'animate-pulse'
   );
 
   return (

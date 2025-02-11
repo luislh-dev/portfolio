@@ -1,0 +1,123 @@
+---
+title: Historial Plus
+description: Aplicación web para la gestion de los historiales médicos de los pacientes.
+caption: Proyecto destacado
+githubUrl: https://github.com/luislh-dev/record-plus-front
+demoUrl: https://record-plus-front.vercel.app
+repositoryName: HistorialPlus
+---
+
+## Objetivo 🚀
+
+Sistema centralizado para almacenar y gestionar expedientes médicos en Perú, eliminando la dependencia de documentos físicos y optimizando la atención hospitalaria.
+
+---
+
+## Características Principales
+
+### Autenticación y Autorización
+
+- Manejo de roles basado en Spring **Security** y **JWT**.
+- Acceso restringido según el tipo de usuario **(Administrador, Gestión, Doctor)**.
+- Integración con APIs externas **(RENIEC y CEE)** para validación de identidad mediante el DNI.
+
+### Gestión de Usuarios y Pacientes
+
+- Registro de usuarios con asignación automática de hospitales.
+- Creación y gestión de **pacientes globales**, accesibles desde cualquier hospital.
+- Autocompletado de datos personales al ingresar el **DNI** en el formulario.
+
+### Administración de Historiales Clínicos
+
+- Almacenamiento y consulta de historiales médicos con filtros avanzados **(fecha, paciente, hospital, etc.)**.
+- Registro de diagnósticos, síntomas y tratamientos médicos.
+- Adjuntar imágenes y documentos médicos **(Rayos X, recetas, informes)** en formato **PDF o imágenes comprimidas**.
+
+### Gestión de Archivos Médicos
+
+- **Optimización de almacenamiento** mediante compresión de imágenes y documentos antes de su subida.
+- Almacenamiento seguro en **Cloudflare R2**, con acceso restringido mediante URLs temporales.
+- **Previsualización avanzada** de archivos en el sistema (visor de imágenes y PDF).
+
+### Rendimiento y Optimización
+
+- **Paginación, filtros y ordenamiento** para consultas eficientes de historiales.
+- Backend modular basado en **Java + Spring Boot (Entidades, Repositorios, Servicios y Controladores)**.
+- Uso de **pnpm** y **Vite** en el frontend para una mejor gestión de dependencias y optimización de la aplicación.
+
+---
+
+## Stack Tecnológico 🛠️
+
+### Front-End
+
+<Stack spacing={12}>
+  <Stack direction='horizontal' spacing={8}>
+    <Label>React</Label>
+    <Label>TypeScript</Label>
+    <Label>HTML</Label>
+    <Label>Tailwind</Label>
+    <Label>HeroUI</Label>
+  </Stack>
+</Stack>
+
+### Back-End
+
+<Stack spacing={12}>
+  <Stack direction='horizontal' spacing={8}>
+    <Label>Java</Label>
+    <Label>Spring Boot</Label>
+    <Label>JWT</Label>
+    <Label>bcrypt</Label>
+    <Label>MySql</Label>
+    <Label>Cloudflare R2</Label>
+  </Stack>
+</Stack>
+
+### DevOps & Infraestructura
+
+<Stack spacing={12}>
+  <Stack direction='horizontal' spacing={8}>
+    <Label>Vercel</Label>
+    <Label>Flyio</Label>
+    <Label>Cloudflare</Label>
+    <Label>Docker</Label>
+    <Label>GitHub</Label>
+    <Label>Git</Label>
+    <Label>Postman</Label>
+  </Stack>
+</Stack>
+
+## Capturas de pantalla
+
+<ImageProvider className='flex flex-wrap gap-4'>
+
+<Image
+  src='https://img.luislh.dev/listado-hospitales.webp'
+  alt='Lista de hospitales'
+  width={288}
+  height={138}
+/>
+<Image
+  src='https://img.luislh.dev/historial.webp'
+  alt='Lista de hospitales'
+  width={288}
+  height={138}
+/>
+<Image
+  src='https://img.luislh.dev/visor-pdf.webp'
+  alt='Lista de hospitales'
+  width={288}
+  height={138}
+/>
+<Image
+  src='https://img.luislh.dev/registro-usuario.webp'
+  alt='Lista de hospitales'
+  width={288}
+  height={138}
+/>
+</ImageProvider>
+
+## Contribuidores
+
+<Contributors owner='luislh-dev' repo='HistorialPlus' />

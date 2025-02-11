@@ -13,3 +13,18 @@ export type TBaseFrontMatter = {
 };
 
 export type TPageFrontMatter = TBaseFrontMatter;
+
+export type TProjectFrontMatter = TBaseFrontMatter & {
+  githubUrl?: string;
+  npmUrl?: string;
+  demoUrl?: string;
+  repositoryName?: string;
+};
+
+export type Contributor = {
+  id: number;
+  login: string;
+  avatar_url: string;
+  html_url: string;
+  contributions: number;
+};

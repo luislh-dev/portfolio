@@ -49,6 +49,7 @@ export default {
     },
   },
   plugins: [
+    require('@tailwindcss/typography'),
     function ({ addVariant }: { addVariant: (name: string, pattern: string) => void }) {
       addVariant('fm', '.fm &');
     },
