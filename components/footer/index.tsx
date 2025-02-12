@@ -24,7 +24,7 @@ function Footer() {
                     {
                       title: 'Experiencia',
                       href: '/experience',
-                      label: 'soon',
+                      label: 'new',
                     },
                   ]}
                 />
@@ -35,6 +35,11 @@ function Footer() {
                       title: 'Proyectos',
                       href: '/projects',
                       label: 'new',
+                    },
+                    {
+                      title: 'Contribuciones',
+                      href: '/contributions',
+                      label: 'soon',
                     },
                   ]}
                 />
