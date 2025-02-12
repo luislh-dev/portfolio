@@ -1,7 +1,7 @@
 'use client';
 
 import { HeroUIProvider } from '@heroui/system';
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import FocusModeProvider from './FocusModeProvider';
 import FramerMotionProvider from './FramerMotionProvider';
 import GlobalStateProvider from './GlobalStateProvider';

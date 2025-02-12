@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FooterLinkProps } from './types';
+import type { FooterLinkProps } from './types';
 
 function FooterLink({ title, href, label, isInternal = true }: FooterLinkProps) {
   if (label === 'soon') {

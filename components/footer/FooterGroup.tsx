@@ -1,5 +1,5 @@
 import FooterLink from './FooterLink';
-import { FooterGroupProps } from './types';
+import type { FooterGroupProps } from './types';
 
 function FooterGroup({ title, links }: FooterGroupProps) {
   return (

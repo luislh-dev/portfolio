@@ -1,10 +1,10 @@
 'use client';
 
-import components from '@components/mdx/custom-components';
 import PageHeader from '@components/PageHeader';
+import components from '@components/mdx/custom-components';
 import WithTableOfContents from '@layouts/WithTableOfContents';
 import Contact from '@markdown/contact.mdx';
-import { TTableOfContentsItem } from '@types';
+import type { TTableOfContentsItem } from '@types';
 
 const tableOfContents: TTableOfContentsItem[] = [
   {

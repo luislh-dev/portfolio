@@ -26,7 +26,7 @@ function MedicalRecordWireframe() {
           </div>
           <div className='flex flex-wrap gap-3'>
             {Array.from({ length: 5 }).map((_, index) => (
-              <div key={index} className='flex flex-col gap-0.5'>
+              <div key={index.toString()} className='flex flex-col gap-0.5'>
                 <Skeleton h={6} w={20} />
                 <Skeleton h={6} className='w-10' />
               </div>
@@ -36,7 +36,7 @@ function MedicalRecordWireframe() {
       </div>
       <div className='col-span-2 col-start-1 row-span-6 row-start-2 flex flex-col gap-2 border-r border-divider-light pr-2 dark:border-divider-dark'>
         {Array.from({ length: 4 }).map((_, index) => (
-          <div key={index}>
+          <div key={index.toString()}>
             <Skeleton className='w-14' />
           </div>
         ))}
@@ -54,7 +54,7 @@ function MedicalRecordWireframe() {
           <div className='flex w-full flex-col gap-2'>
             {Array.from({ length: 4 }).map((_, index) => (
               <div
-                key={index}
+                key={index.toString()}
                 className='flex w-full justify-between gap-2 border-b border-divider-light pb-2 dark:border-divider-dark'
               >
                 <div className='flex w-1/2 flex-col gap-0.5'>

@@ -1,8 +1,8 @@
-import Footer from '@components/footer';
-import Navigation from '@components/navigation';
 import QuickAccess from '@components/QuickAccess';
 import Shortcuts from '@components/Shortcuts';
-import { PropsWithChildren } from 'react';
+import Footer from '@components/footer';
+import Navigation from '@components/navigation';
+import type { PropsWithChildren } from 'react';
 
 function WithNavigationFooter({ children }: PropsWithChildren) {
   return (

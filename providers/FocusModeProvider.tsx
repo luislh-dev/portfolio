@@ -1,6 +1,6 @@
 'use client';
 
-import { JSX, useEffect } from 'react';
+import { type JSX, useEffect } from 'react';
 
 import useFocusMode from '@hooks/useFocusMode';
 
