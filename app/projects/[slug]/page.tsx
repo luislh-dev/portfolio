@@ -25,9 +25,6 @@ export default async function ProjectPage(props: { params: Params }) {
     `${(await params).slug}.mdx`
   );
 
-  console.log('Attempting to load file:', fileRelativePath);
-  console.log('Current working directory:', process.cwd());
-
   const { mdxSource, tableOfContents, frontmatter } = await loadMDXContent(fileRelativePath);
 
   return (
