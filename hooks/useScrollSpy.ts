@@ -29,7 +29,7 @@ export default function useScrollSpy(): {
 
     const observers: Array<IntersectionObserver> = [];
 
-    itemElements.forEach((item) => {
+    for (const item of itemElements) {
       const threshold: number = Number(item.dataset.ssMt) || 0;
 
       const observer = new IntersectionObserver(observerCallback, {
@@ -38,10 +38,12 @@ export default function useScrollSpy(): {
 
       observers.push(observer);
       observer.observe(item);
-    });
+    }
 
     return () => {
-      observers.forEach((observer) => observer.disconnect);
+      for (const observer of observers) {
+        observer.disconnect();
+      }
     };
   }, []);
 
