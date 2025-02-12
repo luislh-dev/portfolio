@@ -59,17 +59,17 @@ function TableOfContents({ items = [] }: TableOfContensProps) {
           initial={{ x: 16, opacity: 0 }}
           animate={isScrolled ? { x: 0, opacity: 1 } : { x: 16, opacity: 0 }}
         >
-          <a
-            href='#skip-navigation'
+          <button
             className={clsx(
               'flex h-6 cursor-pointer items-center rounded-full border border-divider-light px-2 text-xs font-normal text-blue-700',
               'dark:border-divider-dark dark:text-blue-400'
             )}
             tabIndex={isScrolled ? 0 : -1}
             onClick={handleScrollToTopClick}
+            type='button'
           >
             Ir arriba
-          </a>
+          </button>
         </m.div>
       </div>
       <div className={clsx('relative p-3 py-4')}>
