@@ -9,7 +9,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '@config/Site';
 import { getBaseUrl } from '@helpers/url';
 import WithNavigationFooter from '@layouts/WithNavigationFooter';
 import '@styles/main.css';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
