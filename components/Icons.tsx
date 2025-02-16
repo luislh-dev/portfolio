@@ -2,7 +2,13 @@ import type { SVGProps } from 'react';
 
 export function DocumentIcon({ ...props }: SVGProps<SVGSVGElement>) {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' {...props}>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 20 20'
+      fill='currentColor'
+      role='presentation'
+      {...props}
+    >
       <path
         fillRule='evenodd'
         d='M4.5 2A1.5 1.5 0 003 3.5v13A1.5 1.5 0 004.5 18h11a1.5 1.5 0 001.5-1.5V7.621a1.5 1.5 0 00-.44-1.06l-4.12-4.122A1.5 1.5 0 0011.378 2H4.5zm2.25 8.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm0 3a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z'
@@ -16,7 +22,7 @@ export const Dark = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
-    role='presntation'
+    role='presentation'
     fill='currentColor'
     {...props}
   >
@@ -33,7 +39,7 @@ export const Light = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
-    role='img'
+    role='presentation'
     fill='currentColor'
     {...props}
   >
@@ -134,7 +140,7 @@ export const ChevronRight = ({ ...props }: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='img'
+    role='presentation'
     {...props}
   >
     <path d='M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z' />
@@ -148,7 +154,7 @@ export const Globe = ({ ...props }: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 24 24'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    role='img'
+    role='presentation'
     {...props}
   >
     <path
@@ -206,7 +212,13 @@ export const Eye = ({ ...props }: SVGProps<SVGSVGElement>) => (
 );
 
 export const EyeSlash = ({ ...props }: SVGProps<SVGSVGElement>) => (
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' {...props}>
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    viewBox='0 0 20 20'
+    fill='currentColor'
+    role='presentation'
+    {...props}
+  >
     <path
       fillRule='evenodd'
       d='M3.28 2.22a.75.75 0 00-1.06 1.06l14.5 14.5a.75.75 0 101.06-1.06l-1.745-1.745a10.029 10.029 0 003.3-4.38 1.651 1.651 0 000-1.185A10.004 10.004 0 009.999 3a9.956 9.956 0 00-4.744 1.194L3.28 2.22zM7.752 6.69l1.092 1.092a2.5 2.5 0 013.374 3.373l1.091 1.092a4 4 0 00-5.557-5.557z'
@@ -272,7 +284,7 @@ export const XformerlyTwitter = (props: SVGProps<SVGSVGElement>) => (
     height='1em'
     fill='none'
     viewBox='0 0 1200 1227'
-    role='img'
+    role='presentation'
     {...props}
   >
     <path
@@ -592,7 +604,7 @@ export const Hashtag = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='img'
+    role='presentation'
     {...props}
   >
     <path
