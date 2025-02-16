@@ -40,7 +40,7 @@ function NavBar() {
       />
       <div className={clsx('h-2', [isScrolling && ['-mt-2']])} />
       <div className='content-wrapper-max'>
-        <div className='text-smmd:px-4 relative z-50 flex h-16 items-center justify-between px-2'>
+        <div className='relative z-50 flex h-16 items-center justify-between px-2 text-sm md:px-4'>
           <nav className='flex md:gap-2'>
             <NavLogo href='/' title='Home' />
             <ul className='flex items-center md:gap-1'>
