@@ -4,7 +4,7 @@ import type { Config } from 'tailwindcss';
 import { slate } from 'tailwindcss/colors';
 import { fontFamily as _fontFamily } from 'tailwindcss/defaultTheme';
 import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
-import { PluginAPI } from 'tailwindcss/types/config';
+import type { PluginAPI } from 'tailwindcss/types/config';
 
 export default {
   content: [
@@ -50,7 +50,7 @@ export default {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    function ({ addVariant }: { addVariant: (name: string, pattern: string) => void }) {
+    ({ addVariant }: { addVariant: (name: string, pattern: string) => void }) => {
       addVariant('fm', '.fm &');
     },
     ({ matchUtilities, theme }: PluginAPI) => {
