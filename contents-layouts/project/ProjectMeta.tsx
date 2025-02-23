@@ -4,10 +4,11 @@ interface ProjectMetaProps {
   githubUrl?: string;
   npmUrl?: string;
   demoUrl?: string;
+  landingUrl?: string;
 }
 
-function ProjectMeta({ githubUrl, npmUrl, demoUrl }: ProjectMetaProps) {
-  if (!githubUrl && !npmUrl && !demoUrl) return null;
+function ProjectMeta({ githubUrl, npmUrl, demoUrl, landingUrl }: ProjectMetaProps) {
+  if (!githubUrl && !npmUrl && !demoUrl && !landingUrl) return null;
 
   return (
     <div className='content-wrapper mb-10'>
@@ -43,6 +44,17 @@ function ProjectMeta({ githubUrl, npmUrl, demoUrl }: ProjectMetaProps) {
           >
             <Globe className='h-5 w-5' />
             Demo
+          </a>
+        )}
+        {landingUrl && (
+          <a
+            href={landingUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='button button--soft'
+          >
+            <Globe className='h-5 w-5' />
+            Landing
           </a>
         )}
       </div>

@@ -11,13 +11,18 @@ interface ProjectLayoutProps {
 
 function ProjectLayout({
   children,
-  frontMatter: { title, description, caption, githubUrl, npmUrl, demoUrl },
+  frontMatter: { title, description, caption, githubUrl, npmUrl, demoUrl, landingUrl },
   tableOfContents,
 }: PropsWithChildren<ProjectLayoutProps>) {
   return (
     <>
       <PageHeader title={title} description={description} caption={caption} />
-      <ProjectMeta githubUrl={githubUrl} npmUrl={npmUrl} demoUrl={demoUrl} />
+      <ProjectMeta
+        githubUrl={githubUrl}
+        npmUrl={npmUrl}
+        demoUrl={demoUrl}
+        landingUrl={landingUrl}
+      />
       <WithTableOfContents tableOfContents={tableOfContents}>{children}</WithTableOfContents>
     </>
   );

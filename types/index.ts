@@ -18,6 +18,7 @@ export type TProjectFrontMatter = TBaseFrontMatter & {
   githubUrl?: string;
   npmUrl?: string;
   demoUrl?: string;
+  landingUrl?: string;
   repositoryName?: string;
 };
 
