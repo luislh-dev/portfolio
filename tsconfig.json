@@ -21,19 +21,7 @@
     "typeRoots": ["./node_modules/@types", "./types", "mdx-env.d.ts"],
     "baseUrl": ".",
     "paths": {
-      "@*": ["*"],
-      "@components/*": ["components/*"],
-      "@contents/*": ["contents/*"],
-      "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "layouts/*": ["layouts/*"],
-      "@styles/*": ["styles/*"],
-      "@helpers/*": ["helpers/*"],
-      "@types/*": ["types/*"],
-      "@providers/*": ["providers/*"],
-      "@config/*": ["config/*"],
-      "@markdown/*": ["markdown/*"]
+      "@*": ["./*"]
     }
   },
   "include": [
