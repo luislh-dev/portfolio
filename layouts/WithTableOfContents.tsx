@@ -14,7 +14,7 @@ function PageWithMDX({ tableOfContents, children = null }: PropsWithChildren<Pag
     <div className={clsx('content-wrapper flex-shrink-0 overflow-hidden', 'lg:overflow-visible')}>
       <div className={clsx('flex flex-row-reverse gap-8', 'xl:gap-24')}>
         <div className={clsx('-mt-48 hidden', 'lg:block')}>
-          <div className={clsx('sticky top-24 z-10 w-64', 'xl:w-[272px]', 'relative fm:top-0')}>
+          <div className={clsx('sticky top-24 z-10 w-64', 'xl:w-[272px]', 'fm:relative fm:top-0')}>
             <TableOfContents items={tableOfContents} />
           </div>
         </div>
