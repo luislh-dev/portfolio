@@ -48,6 +48,21 @@
     }
   }
 
+  .custom-list {
+    li {
+      @apply relative flex items-start gap-2 leading-relaxed;
+
+      & + li {
+        @apply mt-1.5;
+      }
+
+      &::before {
+        @apply static font-bold text-slate-500 content-['-'];
+        @apply dark:text-slate-400;
+      }
+    }
+  }
+
   .button {
     @apply inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent px-4 text-center text-sm font-bold transition duration-150;
     @apply md:rounded-xl;

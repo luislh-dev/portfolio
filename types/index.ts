@@ -1,3 +1,5 @@
+import type { ToolId } from './tools';
+
 export type TTableOfContentsItem = {
   title: string;
   depth: number;
@@ -29,3 +31,26 @@ export type Contributor = {
   html_url: string;
   contributions: number;
 };
+
+export type Company = {
+  name: string;
+  logo: string;
+  website?: string;
+};
+
+export type EmploymentType = 'full-time' | 'part-time' | 'internship' | 'freelance';
+
+export type workModel = 'remoto' | 'híbrido' | 'presencial';
+
+export type Experience = {
+  role: string;
+  company: Company;
+  startDate: string;
+  endDate: string;
+  employmentType: EmploymentType;
+  workModel: workModel;
+  responsibilities: string[];
+  tools: ToolId[];
+};
+
+export * from './tools';
