@@ -1,29 +1,18 @@
 'use client';
 
-import PageHeader from '@components/PageHeader';
-import components from '@components/mdx/custom-components';
-import WithTableOfContents from '@layouts/WithTableOfContents';
-import Experience from '@markdown/experience/experience.mdx';
-import type { TTableOfContentsItem } from '@types';
-
-const tableOfContents: TTableOfContentsItem[] = [
-  {
-    title: 'Experiencia Profesional',
-    depth: 1,
-    slug: 'experiencia-profesional',
-  },
-];
+import { TimeLine } from '@components/timeline/TimeLine';
+import PageLayout from '@contents-layouts/Page';
 
 export default function Page() {
   return (
-    <>
-      <PageHeader
-        title='Experiencia'
-        description='Mi experiencia profesional en el mundo de la programación y el diseño web.'
-      />
-      <WithTableOfContents tableOfContents={tableOfContents}>
-        <Experience components={components} />
-      </WithTableOfContents>
-    </>
+    <PageLayout
+      frontMatter={{
+        title: 'Experiencia',
+        description:
+          'Mi trayectoria profesional en desarrollo de software, con enfoque en soluciones backend y aplicaciones móviles para el sector financiero y empresarial.',
+      }}
+    >
+      <TimeLine />
+    </PageLayout>
   );
 }
