@@ -1,4 +1,4 @@
-import { dataExperience } from '@app/data/DataExperience';
+import { dataExperience } from '@data/DataExperience';
 import { calculateDuration } from '@utils/calculateDuration';
 import { TimeLineContent } from './TimeLineContent';
 import { TimeLineSideInfo } from './TimeLineSideInfo';
