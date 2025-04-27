@@ -18,6 +18,67 @@ export function DocumentIcon({ ...props }: SVGProps<SVGSVGElement>) {
   );
 }
 
+export const Calendar = ({ ...props }: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    role='presentation'
+    {...props}
+  >
+    <path d='M8 2v4' />
+    <path d='M16 2v4' />
+    <rect width='18' height='18' x='3' y='4' rx='2' />
+    <path d='M3 10h18' />
+  </svg>
+);
+
+export const Clock = ({ ...props }: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    role='presentation'
+    {...props}
+  >
+    <circle cx='12' cy='12' r='10' />
+    <polyline points='12 6 12 12 8 14' />
+  </svg>
+);
+
+export const BriefcaseBussiness = ({ ...props }: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    strokeWidth='2'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    role='presentation'
+    {...props}
+  >
+    <path d='M12 12h.01' />
+    <path d='M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2' />
+    <path d='M22 13a18.15 18.15 0 0 1-20 0' />
+    <rect width='20' height='14' x='2' y='6' rx='2' />
+  </svg>
+);
+
 export const Dark = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
@@ -301,10 +362,9 @@ export const TailwindCSS = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 54 33'
     width='1em'
     height='1em'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>Tailwind CSS icon</title>
     <g clipPath='url(#a)'>
       <path
         fill='#38bdf8'
@@ -328,10 +388,9 @@ export const TypeScript = (props: SVGProps<SVGSVGElement>) => (
     height='1em'
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>TypeScript icon</title>
     <path
       d='M20 0h216c11.046 0 20 8.954 20 20v216c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0Z'
       fill='#3178C6'
@@ -350,10 +409,9 @@ export const React = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 569 512'
     xmlns='http://www.w3.org/2000/svg'
     xmlnsXlink='http://www.w3.org/1999/xlink'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>React icon</title>
     <g fill='none' fillRule='evenodd'>
       <g fill='#087EA4' fillRule='nonzero'>
         <path
@@ -375,10 +433,9 @@ export const Spring = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     width='1em'
     height='1em'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>Spring icon</title>
     <path
       d='M58.2 3.365a29.503 29.503 0 0 1-3.419 6.064A32.094 32.094 0 1 0 9.965 55.372l1.186 1.047a32.08 32.08 0 0 0 52.67-22.253c.875-8.17-1.524-18.51-5.62-30.8zM14.53 55.558a2.744 2.744 0 1 1-.404-3.857 2.744 2.744 0 0 1 .404 3.857zm43.538-9.61c-7.92 10.55-24.83 6.99-35.672 7.502 0 0-1.922.113-3.857.43 0 0 .73-.31 1.663-.663 7.614-2.65 11.213-3.16 15.838-5.54 8.708-4.427 17.322-14.122 19.112-24.2-3.313 9.695-13.373 18.032-22.53 21.418-6.276 2.313-17.614 4.566-17.614 4.566l-.457-.245c-7.714-3.75-7.952-20.457 6.077-25.845 6.143-2.366 12.02-1.067 18.654-2.65 7.084-1.683 15.28-6.99 18.615-13.916 3.73 11.08 8.224 28.422.166 39.15z'
       fill='#68bd45'
@@ -393,10 +450,9 @@ export const Java = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 256 346'
     width='1em'
     height='1em'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>Java icon</title>
     <path
       d='M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17'
       fill='#5382A1'
@@ -524,10 +580,9 @@ export const Cloudflare = (props: SVGProps<SVGSVGElement>) => (
     width='1em'
     height='1em'
     preserveAspectRatio='xMidYMid'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>Cloudflare icon</title>
     <path
       fill='#FFF'
       d='m202.357 49.394-5.311-2.124C172.085 103.434 72.786 69.289 66.81 85.997c-.996 11.286 54.227 2.146 93.706 4.059 12.039.583 18.076 9.671 12.964 24.484l10.069.031c11.615-36.209 48.683-17.73 50.232-29.68-2.545-7.857-42.601 0-31.425-35.497Z'
@@ -550,10 +605,9 @@ export const Kotlin = (props: SVGProps<SVGSVGElement>) => (
     height='1em'
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
-    role='img'
+    role='presentation'
     {...props}
   >
-    <title>Kotlin icon</title>
     <defs>
       <linearGradient x1='99.991%' y1='-.011%' x2='.01%' y2='100.01%' id='a'>
         <stop stopColor='#E44857' offset='.344%' />
@@ -562,6 +616,177 @@ export const Kotlin = (props: SVGProps<SVGSVGElement>) => (
       </linearGradient>
     </defs>
     <path fill='url(#a)' d='M256 256H0V0h256L128 127.949z' />
+  </svg>
+);
+
+export const Firebase = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='600'
+    height='600'
+    fill='none'
+    viewBox='0 0 600 600'
+    role='presentation'
+    {...props}
+  >
+    <path
+      fill='#FF9100'
+      d='M213.918 560.499c23.248 9.357 48.469 14.909 74.952 15.834 35.84 1.252 69.922-6.158 100.391-20.234-36.537-14.355-69.627-35.348-97.869-61.448-18.306 29.31-45.382 52.462-77.474 65.848Z'
+    />
+    <path
+      fill='#FFC400'
+      d='M291.389 494.66c-64.466-59.622-103.574-145.917-100.269-240.568.108-3.073.27-6.145.46-9.216a166.993 166.993 0 0 0-36.004-5.241 167.001 167.001 0 0 0-51.183 6.153c-17.21 30.145-27.594 64.733-28.888 101.781-3.339 95.611 54.522 179.154 138.409 212.939 32.093-13.387 59.168-36.51 77.475-65.848Z'
+    />
+    <path
+      fill='#FF9100'
+      d='M291.39 494.657c14.988-23.986 24.075-52.106 25.133-82.403 2.783-79.695-50.792-148.251-124.942-167.381-.19 3.071-.352 6.143-.46 9.216-3.305 94.651 35.803 180.946 100.269 240.568Z'
+    />
+    <path
+      fill='#DD2C00'
+      d='M308.231 20.858C266 54.691 232.652 99.302 212.475 150.693c-11.551 29.436-18.81 61.055-20.929 94.2 74.15 19.13 127.726 87.686 124.943 167.38-1.058 30.297-10.172 58.39-25.134 82.404 28.24 26.127 61.331 47.093 97.868 61.447 73.337-33.9 125.37-106.846 128.383-193.127 1.952-55.901-19.526-105.724-49.875-147.778-32.051-44.477-159.5-194.36-159.5-194.36Z'
+    />
+  </svg>
+);
+
+export const Android = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='256'
+    height='150'
+    preserveAspectRatio='xMidYMid'
+    viewBox='0 0 256 150'
+    role='presentation'
+    {...props}
+  >
+    <path
+      fill='#34A853'
+      d='M255.285 143.47c-.084-.524-.164-1.042-.251-1.56a128.119 128.119 0 0 0-12.794-38.288 128.778 128.778 0 0 0-23.45-31.86 129.166 129.166 0 0 0-22.713-18.005c.049-.08.09-.168.14-.25 2.582-4.461 5.172-8.917 7.755-13.38l7.576-13.068c1.818-3.126 3.632-6.26 5.438-9.386a11.776 11.776 0 0 0 .662-10.484 11.668 11.668 0 0 0-4.823-5.536 11.85 11.85 0 0 0-5.004-1.61 11.963 11.963 0 0 0-2.218.018 11.738 11.738 0 0 0-8.968 5.798c-1.814 3.127-3.628 6.26-5.438 9.386l-7.576 13.069c-2.583 4.462-5.173 8.918-7.755 13.38-.282.487-.567.973-.848 1.467-.392-.157-.78-.313-1.172-.462-14.24-5.43-29.688-8.4-45.836-8.4-.442 0-.879 0-1.324.006-14.357.143-28.152 2.64-41.022 7.12a119.434 119.434 0 0 0-4.42 1.642c-.262-.455-.532-.911-.79-1.367-2.583-4.462-5.173-8.918-7.755-13.38L65.123 15.25c-1.818-3.126-3.632-6.259-5.439-9.386A11.736 11.736 0 0 0 48.5.048 11.71 11.71 0 0 0 43.49 1.66a11.716 11.716 0 0 0-4.077 4.063c-.281.474-.532.967-.742 1.473a11.808 11.808 0 0 0-.365 8.188c.259.786.594 1.554 1.023 2.296a3973.32 3973.32 0 0 1 5.439 9.386c2.53 4.357 5.054 8.713 7.58 13.069 2.582 4.462 5.168 8.918 7.75 13.38.02.038.046.075.065.112A129.184 129.184 0 0 0 45.32 64.38a129.693 129.693 0 0 0-22.2 24.015 127.737 127.737 0 0 0-9.34 15.24 128.238 128.238 0 0 0-10.843 28.764 130.743 130.743 0 0 0-1.951 9.524c-.087.518-.167 1.042-.247 1.56A124.978 124.978 0 0 0 0 149.118h256c-.205-1.891-.449-3.77-.734-5.636l.019-.012Z'
+    />
+    <path
+      fill='#202124'
+      d='M194.59 113.712c5.122-3.41 5.867-11.3 1.661-17.62-4.203-6.323-11.763-8.682-16.883-5.273-5.122 3.41-5.868 11.3-1.662 17.621 4.203 6.322 11.764 8.682 16.883 5.272ZM78.518 108.462c4.206-6.321 3.46-14.21-1.662-17.62-5.123-3.41-12.68-1.05-16.886 5.27-4.203 6.323-3.458 14.212 1.662 17.622 5.122 3.41 12.683 1.05 16.886-5.272Z'
+    />
+  </svg>
+);
+
+export const GoogleDocs = (props: SVGProps<SVGSVGElement>) => (
+  <svg x='0px' y='0px' viewBox='0 0 1818.2 2500' role='presentation' {...props}>
+    <g>
+      <path
+        fill='#3086F6'
+        d='M1136.4,0H170.4C79.6,0,0,79.5,0,170.5v2159.1c0,90.9,79.5,170.5,170.5,170.5h1477.3
+		c90.9,0,170.5-79.5,170.5-170.5V681.8l-397.7-284.1L1136.4,0z'
+      />
+      <path
+        fill='#FDFFFF'
+        d='M454.5,1818.2h909.1v-113.6H454.6L454.5,1818.2L454.5,1818.2z M454.5,2045.5h681.8v-113.6H454.5V2045.5z
+		 M454.5,1250v113.6h909.1V1250H454.5z M454.5,1590.9h909.1v-113.6H454.6L454.5,1590.9L454.5,1590.9z'
+      />
+      <path fill='#0C67D6' d='M1136.4,0v511.4c0,90.9,79.5,170.4,170.4,170.4h511.4L1136.4,0z' />
+    </g>
+  </svg>
+);
+
+export const GoogleSheets = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox='0 0 314.7 428'
+    xmlns='http://www.w3.org/2000/svg'
+    width='1838'
+    height='2500'
+    role='presentation'
+    {...props}
+  >
+    <path d='M206 108.7h108.7L206 0z' fill='#188038' />
+    <path
+      d='M206 108.7V0H24C10.7 0 0 10.7 0 24v380c0 13.3 10.7 24 24 24h266.7c13.3 0 24-10.7 24-24V108.7z'
+      fill='#34a853'
+    />
+    <path
+      d='M60 167.9V315h194.7V167.9zM145.3 291H84v-37.6h61.3zm0-61.5H84v-37.6h61.3zm85.4 61.5h-61.3v-37.6h61.3zm0-61.5h-61.3v-37.6h61.3z'
+      fill='#fff'
+    />
+  </svg>
+);
+
+export const Turso = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    fill='none'
+    height='170'
+    viewBox='0 0 201 170'
+    width='201'
+    xmlns='http://www.w3.org/2000/svg'
+    role='presentation'
+    {...props}
+  >
+    <path
+      d='m200.035 48.61c-4.67-27.94-29.16-48.61-29.16-48.61v30.78l-14.54 3.75-9.11-10.97-4.81 9.46c-9.92-2.7-23.58-4.44-42.37-4.44-18.7901 0-32.4501 1.75-42.3701 4.44l-4.81-9.46-9.11 10.97-14.54-3.75v-30.78s-24.48997 20.67-29.1599684 48.61l32.1399684 11.12c1.05 19.43 9.79 71.88 12.29 76.64 2.66 5.07 16.78 19.56 27.83 25.13 0 0 4-4.23 6.44-7.96 3.1 3.65 19.11 16.45 21.3001 16.45 2.19 0 18.2-12.79 21.3-16.45 2.44 3.73 6.44 7.96 6.44 7.96 11.05-5.57 25.17-20.06 27.83-25.13 2.5-4.76 11.24-57.21 12.29-76.64l32.14-11.12zm-46.19 44.74-21.75 1.94 1.91 26.67s-13.23 10.95-33.96 10.95c-20.7301 0-33.9601-10.95-33.9601-10.95l1.91-26.67-21.75-1.94-3.72-30.04 36.05 12.48-2.8 37.39c6.7 1.7 13.75 3.39 24.2801 3.39 10.53 0 17.57-1.69 24.27-3.39l-2.8-37.39 36.05-12.48-3.72 30.04z'
+      fill='#183134'
+    />
+  </svg>
+);
+
+export const Astro = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox='0 0 256 366'
+    xmlns='http://www.w3.org/2000/svg'
+    width='256'
+    height='366'
+    preserveAspectRatio='xMidYMid'
+    role='presentation'
+    {...props}
+  >
+    <path
+      d='M182.022 9.147c2.982 3.702 4.502 8.697 7.543 18.687L256 246.074a276.467 276.467 0 0 0-79.426-26.891L133.318 73.008a5.63 5.63 0 0 0-10.802.017L79.784 219.11A276.453 276.453 0 0 0 0 246.04L66.76 27.783c3.051-9.972 4.577-14.959 7.559-18.654a24.541 24.541 0 0 1 9.946-7.358C88.67 0 93.885 0 104.314 0h47.683c10.443 0 15.664 0 20.074 1.774a24.545 24.545 0 0 1 9.95 7.373Z'
+      fill='currentColor'
+    />
+    <path
+      fill='#FF5D01'
+      d='M189.972 256.46c-10.952 9.364-32.812 15.751-57.992 15.751-30.904 0-56.807-9.621-63.68-22.56-2.458 7.415-3.009 15.903-3.009 21.324 0 0-1.619 26.623 16.898 45.14 0-9.615 7.795-17.41 17.41-17.41 16.48 0 16.46 14.378 16.446 26.043l-.001 1.041c0 17.705 10.82 32.883 26.21 39.28a35.685 35.685 0 0 1-3.588-15.647c0-16.886 9.913-23.173 21.435-30.48 9.167-5.814 19.353-12.274 26.372-25.232a47.588 47.588 0 0 0 5.742-22.735c0-5.06-.786-9.938-2.243-14.516Z'
+    />
+  </svg>
+);
+
+export const Atlassian = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    preserveAspectRatio='xMidYMid'
+    viewBox='0 0 256 256'
+    role='presentation'
+    {...props}
+  >
+    <defs>
+      <linearGradient x1='99.7%' y1='15.8%' x2='39.8%' y2='97.4%' id='a'>
+        <stop stopColor='#0052CC' offset='0%' />
+        <stop stopColor='#2684FF' offset='92.3%' />
+      </linearGradient>
+    </defs>
+    <path
+      d='M76 118c-4-4-10-4-13 1L1 245a7 7 0 0 0 6 10h88c3 0 5-1 6-4 19-39 8-98-25-133Z'
+      fill='url(#a)'
+    />
+    <path
+      d='M122 4c-35 56-33 117-10 163l42 84c1 3 4 4 7 4h87a7 7 0 0 0 7-10L134 4c-2-5-9-5-12 0Z'
+      fill='#2681FF'
+    />
+  </svg>
+);
+
+export const Twilio = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox='0 0 64 64'
+    xmlns='http://www.w3.org/2000/svg'
+    width='64'
+    height='64'
+    role='presentation'
+    {...props}
+  >
+    <g transform='translate(0 .047) scale(.93704)' fill='#e31e26'>
+      <path d='M34.1 0C15.3 0 0 15.3 0 34.1s15.3 34.1 34.1 34.1C53 68.3 68.3 53 68.3 34.1S53 0 34.1 0zm0 59.3C20.3 59.3 9 48 9 34.1 9 20.3 20.3 9 34.1 9 48 9 59.3 20.3 59.3 34.1 59.3 48 48 59.3 34.1 59.3z' />
+      <circle cx='42.6' cy='25.6' r='7.1' />
+      <circle cx='42.6' cy='42.6' r='7.1' />
+      <circle cx='25.6' cy='42.6' r='7.1' />
+      <circle cx='25.6' cy='25.6' r='7.1' />
+    </g>
   </svg>
 );
 
