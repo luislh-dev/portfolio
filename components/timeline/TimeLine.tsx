@@ -16,7 +16,7 @@ export function TimeLine() {
             className={`relative flex flex-col gap-8 lg:gap-24 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
           >
             {/* Bloque Izquierda / Derecha */}
-            <div className='sticky top-16 z-10 max-h-max w-full bg-gradient-to-b from-white/90 to-white/95 py-2 fm:relative fm:top-0 lg:top-24 lg:z-auto lg:w-1/2 lg:py-0'>
+            <div className='sticky top-16 z-10 max-h-max w-full bg-gradient-to-b from-white/90 to-white/95 py-2 fm:relative fm:top-0 dark:from-slate-900/90 dark:to-slate-900/95 lg:top-24 lg:z-auto lg:w-1/2 lg:py-0'>
               {/* Línea que conecta desde la línea vertical al contenido */}
               <div
                 className={`absolute -left-8 top-12 h-0.5 w-8 bg-blue-600/50 dark:bg-blue-800/50 sm:-left-14 sm:w-14 lg:w-12 ${
