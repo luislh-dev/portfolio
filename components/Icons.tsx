@@ -1,12 +1,12 @@
 import type { SVGProps } from 'react';
 
-export function DocumentIcon({ ...props }: SVGProps<SVGSVGElement>) {
+export function DocumentIcon({ ...props }: Readonly<SVGProps<SVGSVGElement>>) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 20 20'
       fill='currentColor'
-      role='presentation'
+      role={props.role || 'presentation'}
       {...props}
     >
       <path
@@ -29,7 +29,7 @@ export const Calendar = ({ ...props }: SVGProps<SVGSVGElement>) => (
     strokeWidth='2'
     strokeLinecap='round'
     strokeLinejoin='round'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M8 2v4' />
@@ -50,7 +50,7 @@ export const Clock = ({ ...props }: SVGProps<SVGSVGElement>) => (
     strokeWidth='2'
     strokeLinecap='round'
     strokeLinejoin='round'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <circle cx='12' cy='12' r='10' />
@@ -69,7 +69,7 @@ export const BriefcaseBussiness = ({ ...props }: SVGProps<SVGSVGElement>) => (
     strokeWidth='2'
     strokeLinecap='round'
     strokeLinejoin='round'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M12 12h.01' />
@@ -83,7 +83,7 @@ export const Dark = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
-    role='presentation'
+    role={props.role || 'presentation'}
     fill='currentColor'
     {...props}
   >
@@ -100,7 +100,7 @@ export const Light = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
-    role='presentation'
+    role={props.role || 'presentation'}
     fill='currentColor'
     {...props}
   >
@@ -114,7 +114,7 @@ export const Code = ({ ...props }: SVGProps<SVGSVGElement>) => (
     width='24'
     height='24'
     viewBox='0 0 24 24'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <title>code_line</title>
@@ -134,7 +134,7 @@ export const Stars = ({ ...props }: SVGProps<SVGSVGElement>) => (
     width='24'
     height='24'
     viewBox='0 0 24 24'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <title>bling_fill</title>
@@ -154,7 +154,7 @@ export const Shield = ({ ...props }: SVGProps<SVGSVGElement>) => (
     width='24'
     height='24'
     viewBox='0 0 24 24'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <title>shield_fill</title>
@@ -173,7 +173,7 @@ export const QuickAccess = ({ ...props }: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -189,7 +189,7 @@ export const X = ({ ...props }: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z' />
@@ -201,7 +201,7 @@ export const ChevronRight = ({ ...props }: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z' />
@@ -215,7 +215,7 @@ export const Globe = ({ ...props }: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 24 24'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -246,7 +246,7 @@ export const Npm = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
-    role='img'
+    role={props.role || 'img'}
     fill='currentColor'
     {...props}
   >
@@ -259,7 +259,7 @@ export const Eye = ({ ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
-    role='presentation'
+    role={props.role || 'presentation'}
     fill='currentColor'
     {...props}
   >
@@ -277,7 +277,7 @@ export const EyeSlash = ({ ...props }: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -296,7 +296,7 @@ export const Keyboard = ({ ...props }: SVGProps<SVGSVGElement>) => (
     stroke='currentColor'
     fill='currentColor'
     strokeWidth='0'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z' />
@@ -311,7 +311,7 @@ export const LinkedIn = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
     viewBox='0 0 256 256'
-    role='img'
+    role={props.role || 'img'}
     {...props}
   >
     <title>LinkedIn icon</title>
@@ -330,7 +330,7 @@ export const Github = (props: SVGProps<SVGSVGElement>) => (
     fill='currentColor'
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
-    role='img'
+    role={props.role || 'img'}
     {...props}
   >
     <title>GitHub icon</title>
@@ -345,7 +345,7 @@ export const XformerlyTwitter = (props: SVGProps<SVGSVGElement>) => (
     height='1em'
     fill='none'
     viewBox='0 0 1200 1227'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -362,7 +362,7 @@ export const TailwindCSS = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 54 33'
     width='1em'
     height='1em'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <g clipPath='url(#a)'>
@@ -388,7 +388,7 @@ export const TypeScript = (props: SVGProps<SVGSVGElement>) => (
     height='1em'
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -409,7 +409,7 @@ export const React = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 569 512'
     xmlns='http://www.w3.org/2000/svg'
     xmlnsXlink='http://www.w3.org/1999/xlink'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <g fill='none' fillRule='evenodd'>
@@ -433,7 +433,7 @@ export const Spring = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     width='1em'
     height='1em'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -450,7 +450,7 @@ export const Java = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 256 346'
     width='1em'
     height='1em'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -483,11 +483,11 @@ export const VisualStudioCode = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 100 100'
     width='1em'
     height='1em'
-    role='img'
+    role={props.role || 'img'}
     {...props}
   >
     <title>Visual Studio Code icon</title>
-    <mask id='a' width={100} height={100} x={0} y={0} mask-type='alpha' maskUnits='userSpaceOnUse'>
+    <mask id='a' width={100} height={100} x={0} y={0} maskUnits='userSpaceOnUse'>
       <path
         fill='#fff'
         fillRule='evenodd'
@@ -580,7 +580,7 @@ export const Cloudflare = (props: SVGProps<SVGSVGElement>) => (
     width='1em'
     height='1em'
     preserveAspectRatio='xMidYMid'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -605,7 +605,7 @@ export const Kotlin = (props: SVGProps<SVGSVGElement>) => (
     height='1em'
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <defs>
@@ -626,7 +626,7 @@ export const Firebase = (props: SVGProps<SVGSVGElement>) => (
     height='600'
     fill='none'
     viewBox='0 0 600 600'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -655,7 +655,7 @@ export const Android = (props: SVGProps<SVGSVGElement>) => (
     height='150'
     preserveAspectRatio='xMidYMid'
     viewBox='0 0 256 150'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -670,7 +670,7 @@ export const Android = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const GoogleDocs = (props: SVGProps<SVGSVGElement>) => (
-  <svg x='0px' y='0px' viewBox='0 0 1818.2 2500' role='presentation' {...props}>
+  <svg x='0px' y='0px' viewBox='0 0 1818.2 2500' role={props.role || 'presentation'} {...props}>
     <g>
       <path
         fill='#3086F6'
@@ -693,7 +693,7 @@ export const GoogleSheets = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     width='1838'
     height='2500'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M206 108.7h108.7L206 0z' fill='#188038' />
@@ -715,7 +715,7 @@ export const Turso = (props: SVGProps<SVGSVGElement>) => (
     viewBox='0 0 201 170'
     width='201'
     xmlns='http://www.w3.org/2000/svg'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -732,7 +732,7 @@ export const Astro = (props: SVGProps<SVGSVGElement>) => (
     width='256'
     height='366'
     preserveAspectRatio='xMidYMid'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -751,7 +751,7 @@ export const Atlassian = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     preserveAspectRatio='xMidYMid'
     viewBox='0 0 256 256'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <defs>
@@ -777,7 +777,7 @@ export const Twilio = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     width='64'
     height='64'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <g transform='translate(0 .047) scale(.93704)' fill='#e31e26'>
@@ -795,7 +795,7 @@ export const ExternalLink = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
@@ -816,7 +816,7 @@ export const Mail = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path d='M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z' />
@@ -829,7 +829,7 @@ export const Hashtag = (props: SVGProps<SVGSVGElement>) => (
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 20 20'
     fill='currentColor'
-    role='presentation'
+    role={props.role || 'presentation'}
     {...props}
   >
     <path
