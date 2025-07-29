@@ -18,7 +18,7 @@ export const urlType = (url: string) => {
     return 'hash';
   }
 
-  if (url.indexOf('mailto') === 0) {
+  if (url.startsWith('mailto')) {
     return 'mail';
   }
 
@@ -45,6 +45,6 @@ export const generateSlug = (text: string) => {
       // Eliminamos guiones múltiples
       .replace(/-+/g, '-')
       // Eliminamos guiones al inicio y final
-      .replace(/^-+|-+$/g, '')
+      .replace(/(?:^-+)|(?:-+$)/g, '')
   );
 };
