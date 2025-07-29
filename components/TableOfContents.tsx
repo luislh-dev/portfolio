@@ -29,7 +29,7 @@ interface TableOfContensProps {
   items?: Array<TTableOfContentsItem>;
 }
 
-function TableOfContents({ items = [] }: TableOfContensProps) {
+function TableOfContents({ items = [] }: Readonly<TableOfContensProps>) {
   const isScrolled = useOnScroll(200);
   const { currentVisibles } = useScrollSpy();
 
@@ -52,8 +52,7 @@ function TableOfContents({ items = [] }: TableOfContensProps) {
         )}
       >
         <h2 className={clsx('text-slate-700', 'dark:text-slate-300')} id='table-of-contents'>
-          <span className={clsx('lg:hidden', 'xl:inline')}>Tabla de </span>
-          Contenido
+          <span className={clsx('lg:hidden', 'xl:inline')}>Tabla de </span>Contenido
         </h2>
         <m.div
           initial={{ x: 16, opacity: 0 }}

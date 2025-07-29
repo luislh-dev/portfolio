@@ -64,7 +64,7 @@ export function SectionButtonSmall({
   icon = null,
   active = false,
   onClick = () => {},
-}: Omit<SectionButtonProps, 'description'>) {
+}: Readonly<Omit<SectionButtonProps, 'description'>>) {
   return (
     <button
       type='button'
