@@ -17,7 +17,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 
 type Params = Promise<{ slug: string }>;
 
-export default async function ProjectPage(props: { params: Params }) {
+export default async function ProjectPage(props: Readonly<{ params: Params }>) {
   const params = props.params;
   const fileRelativePath = path.join(
     process.cwd(),

@@ -45,16 +45,16 @@ function ButtonResume() {
 function AvailableForHire() {
   return (
     <div className='button button--ghost md:button--big pointer-events-none gap-2.5 px-2.5 text-blue-500 dark:text-blue-400 md:px-2.5'>
-      <span className='relative flex h-2 w-2'>
+      <div className='relative flex h-2 w-2'>
         <span className='absolute -left-1 -top-1 inline-flex h-4 w-4 animate-ping rounded-full bg-blue-600 opacity-75 dark:bg-blue-300' />
         <span className='relative inline-flex h-2 w-2 rounded-full bg-blue-500 dark:bg-blue-400' />
-      </span>
+      </div>
       DISPONIBLE PARA TRABAJAR
     </div>
   );
 }
 
-function HeaderCta({ isFree = true, isFreeAnimationDuration = 4 }: HeaderCtaProps) {
+function HeaderCta({ isFree = true, isFreeAnimationDuration = 4 }: Readonly<HeaderCtaProps>) {
   const shouldReduceMotion = useReducedMotion();
 
   let isFreeVariants = {

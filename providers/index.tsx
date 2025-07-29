@@ -7,7 +7,7 @@ import FramerMotionProvider from './FramerMotionProvider';
 import GlobalStateProvider from './GlobalStateProvider';
 import { ThemeProvider } from './ThemeProvider';
 
-function Provider({ children }: PropsWithChildren) {
+function Provider({ children }: Readonly<PropsWithChildren>) {
   return (
     <FramerMotionProvider>
       <ThemeProvider attribute='class' defaultTheme='light' enableSystem>

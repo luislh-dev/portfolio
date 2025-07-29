@@ -5,7 +5,7 @@ interface FramerMotionProviderProps {
   children: JSX.Element;
 }
 
-function FramerMotionProvider({ children }: FramerMotionProviderProps) {
+function FramerMotionProvider({ children }: Readonly<FramerMotionProviderProps>) {
   return (
     <MotionProvider reducedMotion='user'>
       <LazyMotion strict features={domAnimation}>

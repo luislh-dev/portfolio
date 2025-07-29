@@ -16,7 +16,7 @@ export function SectionButton({
   icon = null,
   active = false,
   onClick = () => {},
-}: SectionButtonProps) {
+}: Readonly<SectionButtonProps>) {
   return (
     <button
       type='button'

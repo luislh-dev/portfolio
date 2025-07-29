@@ -11,7 +11,7 @@ interface TableOfContentsLinkProps extends TTableOfContentsItem {
   active?: boolean;
 }
 
-function TableOfContentsLink({ title, depth, slug, active = false }: TableOfContentsLinkProps) {
+function TableOfContentsLink({ title, depth, slug, active = false }: Readonly<TableOfContentsLinkProps>) {
   return (
     <a
       className={clsx('toc-link', {

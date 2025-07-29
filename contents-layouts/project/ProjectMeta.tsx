@@ -7,7 +7,7 @@ interface ProjectMetaProps {
   landingUrl?: string;
 }
 
-function ProjectMeta({ githubUrl, npmUrl, demoUrl, landingUrl }: ProjectMetaProps) {
+function ProjectMeta({ githubUrl, npmUrl, demoUrl, landingUrl }: Readonly<ProjectMetaProps>) {
   if (!githubUrl && !npmUrl && !demoUrl && !landingUrl) return null;
 
   return (

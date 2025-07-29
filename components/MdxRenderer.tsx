@@ -1,5 +1,5 @@
 'use client';
 
-export default function MdxRenderer({ Component }: { Component: React.ComponentType }) {
+export default function MdxRenderer({ Component }: Readonly<{ Component: React.ComponentType }>) {
   return <Component />;
 }

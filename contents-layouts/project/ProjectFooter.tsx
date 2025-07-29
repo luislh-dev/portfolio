@@ -2,7 +2,7 @@ interface ProjectFooterProps {
   githubUrl?: string;
 }
 
-function ProjectFooter({ githubUrl }: ProjectFooterProps) {
+function ProjectFooter({ githubUrl }: Readonly<ProjectFooterProps>) {
   if (!githubUrl) return null;
 
   return (
@@ -10,9 +10,11 @@ function ProjectFooter({ githubUrl }: ProjectFooterProps) {
       <div className='flex flex-wrap gap-x-1 gap-y-2'>
         <div>
           ¿Tienes algún comentario?
-          <a href={githubUrl} target='_blank' rel='noopener noreferrer' className='link'>
-            Abre un issue/PR aquí.
-          </a>
+          <div>
+            <a href={githubUrl} target='_blank' rel='noopener noreferrer' className='link'>
+              Abre un issue/PR aquí.
+            </a>
+          </div>
         </div>
       </div>
     </div>

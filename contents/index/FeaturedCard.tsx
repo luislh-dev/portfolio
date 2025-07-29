@@ -6,7 +6,7 @@ interface FeaturedCardProps {
   desc: string;
 }
 
-function FeaturedCard({ icon, title, desc }: FeaturedCardProps) {
+function FeaturedCard({ icon, title, desc }: Readonly<FeaturedCardProps>) {
   return (
     <div className='relative z-10 flex-1 rounded-2xl border border-divider-light bg-white dark:border-divider-dark dark:bg-slate-900'>
       <div className='absolute inset-x-0 inset-y-8 z-[-1] border-t border-divider-light dark:border-divider-dark' />

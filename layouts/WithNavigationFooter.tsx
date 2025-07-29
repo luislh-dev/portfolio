@@ -4,7 +4,7 @@ import Footer from '@components/footer';
 import Navigation from '@components/navigation';
 import type { PropsWithChildren } from 'react';
 
-function WithNavigationFooter({ children }: PropsWithChildren) {
+function WithNavigationFooter({ children }: Readonly<PropsWithChildren>) {
   return (
     <>
       <Navigation />

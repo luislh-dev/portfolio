@@ -21,7 +21,7 @@ function SectionTitle({
   caption,
   description,
   button = null,
-}: SectionTitleProps) {
+}: Readonly<SectionTitleProps>) {
   const Heading = as;
 
   return (

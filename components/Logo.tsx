@@ -4,7 +4,7 @@ interface LogoProps {
   active?: boolean;
 }
 
-function Logo({ active = false }: LogoProps) {
+function Logo({ active = false }: Readonly<LogoProps>) {
   return (
     <div className='flex items-center gap-1.5 font-[1000] leading-none'>
       <div

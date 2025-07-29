@@ -20,7 +20,7 @@ interface PageHeaderProps {
   headerImage?: ReactNode;
 }
 
-function PageHeader({ title, description, caption = '', headerImage = null }: PageHeaderProps) {
+function PageHeader({ title, description, caption = '', headerImage = null }: Readonly<PageHeaderProps>) {
   return (
     <header
       id='page-header'
