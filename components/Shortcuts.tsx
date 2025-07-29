@@ -7,7 +7,7 @@ import useTheme from '@hooks/useTheme';
 
 function Shortcuts() {
   const { mounted, toggleTheme } = useTheme();
-  const { isQuickAccessOpen, setQuickAccessOpen } = useGlobal();
+  const { isQuickAccessOpen, setIsQuickAccessOpen } = useGlobal();
   const { focusMode, setFocusMode } = useFocusMode();
 
   useShortcut('KeyD', () => {
@@ -17,7 +17,7 @@ function Shortcuts() {
   });
 
   useShortcut('KeyQ', () => {
-    setQuickAccessOpen(!isQuickAccessOpen);
+    setIsQuickAccessOpen(!isQuickAccessOpen);
   });
 
   useShortcut('KeyF', () => {

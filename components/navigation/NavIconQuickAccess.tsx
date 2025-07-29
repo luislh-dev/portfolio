@@ -6,7 +6,7 @@ import { Kbd } from '@components/Kbd';
 import useGlobal from '@hooks/useGlobal';
 
 function NavIconQuickAccess() {
-  const { setQuickAccessOpen } = useGlobal();
+  const { setIsQuickAccessOpen } = useGlobal();
 
   return (
     <button
@@ -20,7 +20,7 @@ function NavIconQuickAccess() {
       aria-label='Open Quick Access'
       title='Open Quick Access'
       onClick={() => {
-        setQuickAccessOpen(true);
+        setIsQuickAccessOpen(true);
       }}
     >
       <QuickAccess className={clsx('h-5 w-5')} />

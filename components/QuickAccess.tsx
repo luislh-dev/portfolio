@@ -16,12 +16,12 @@ const animation = {
 };
 
 function QuickAccess() {
-  const { isQuickAccessOpen, setQuickAccessOpen } = useGlobal();
+  const { isQuickAccessOpen, setIsQuickAccessOpen } = useGlobal();
 
   return isQuickAccessOpen ? (
     <Drawer
       isOpen={isQuickAccessOpen}
-      onClose={() => setQuickAccessOpen(false)}
+      onClose={() => setIsQuickAccessOpen(false)}
       aria-label='Quick Access'
       size='full'
       hideCloseButton
