@@ -114,11 +114,7 @@ function ContributionsStats({ total, uniqueRepository, isLoading = false }: Read
   );
 }
 
-interface MyContributionsProps {
-  limit?: number;
-}
-
-export default function MyContributions({ limit = 6 }: Readonly<MyContributionsProps>) {
+export default function MyContributions() {
   const [contributions, setContributions] = useState<MyContributionResponse>({
     total: 0,
     uniqueRepository: 0,
@@ -139,7 +135,7 @@ export default function MyContributions({ limit = 6 }: Readonly<MyContributionsP
         console.error('Error al obtener mis contribuciones', error);
         setLoading(false);
       });
-  }, [limit]);
+  }, []);
 
   return (
     <div className='content-wrapper'>
