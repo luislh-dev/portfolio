@@ -2,7 +2,13 @@ import type { SVGProps } from 'react';
 
 export function ChevronRightIcon({ ...props }: Readonly<SVGProps<SVGSVGElement>>) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      {...props}
+      role={props.role || 'presentation'}
+    >
       <path d="M14.5 7.40192C16.5 8.55662 16.5 11.4434 14.5 12.5981L8.5 16.0622C6.5 17.2169 4 15.7735 4 13.4641L4 6.5359C4 4.2265 6.5 2.78312 8.5 3.93782L14.5 7.40192Z" />
     </svg>
   );

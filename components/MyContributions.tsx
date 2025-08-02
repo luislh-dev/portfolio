@@ -1,6 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import type { MyContribution, MyContributionResponse } from '@/types/contributions';
 import { Item } from './Item';
@@ -25,10 +26,12 @@ function Contributions({ contributions }: Readonly<ContributionsProps>) {
                   target="_blank"
                   rel="noreferrer nofollow"
                 >
-                  <img
+                  <Image
                     className="h-10 w-10 rounded-full"
                     src={contribution.repository.owner.avatarUrl}
                     alt={contribution.repository.owner.login}
+                    width={40}
+                    height={40}
                   />
                 </a>
                 <div>

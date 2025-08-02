@@ -1,4 +1,5 @@
 import { formatDate } from '@utils/formatDate';
+import Image from 'next/image';
 import { CompanyAvatar } from './CompanyAvatar';
 
 interface TimeLineSideInfoProps {
@@ -27,7 +28,7 @@ export function TimeLineSideInfo(props: TimeLineSideInfoProps) {
             rel="noopener noreferrer"
             className="inline-block overflow-hidden rounded-full"
           >
-            <img src={src} alt={alt} className="h-20 w-20 rounded-full" />
+            <Image src={src} alt={alt} className="rounded-full" width={80} height={80} />
           </a>
         </div>
       ) : (
