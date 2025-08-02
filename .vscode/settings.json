@@ -18,4 +18,8 @@
       "source.organizeImports.biome": "explicit"
     }
   },
+  "sonarlint.connectedMode.project": {
+    "connectionId": "historial-plus",
+    "projectKey": "luislh-dev_portfolio"
+  },
 }
