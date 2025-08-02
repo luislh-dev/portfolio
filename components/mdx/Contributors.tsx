@@ -10,7 +10,7 @@ interface ContribuitorProps {
   repo: string;
 }
 
-export default function Contributors({ owner, repo }: ContribuitorProps) {
+export default function Contributors({ owner, repo }: Readonly<ContribuitorProps>) {
   const [contributors, setContributors] = useState<Contributor[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -35,12 +35,12 @@ export default function Contributors({ owner, repo }: ContribuitorProps) {
     <div className='flex gap-4'>
       {loading ? (
         // Skeleton loading state
-        Array.from({ length: 2 }).map((_, index) => (
-          <Skeleton key={index.toString()} shape='circle' w={48} h={48} isLoading={loading} />
+        Array.from({ length: 2 }).map(() => (
+          <Skeleton key={crypto.randomUUID()} shape='circle' w={48} h={48} isLoading={loading} />
         ))
       ) : contributors.length > 0 ? (
         contributors.map((contributor) => (
-          <div key={contributor.id} className=''>
+          <div key={contributor.id} className='flex'>
             <a href={contributor.html_url} target='_blank' rel='noopener noreferrer'>
               <Image
                 src={contributor.avatar_url}
