@@ -13,10 +13,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroui/drawer": "^2.2.14",
-    "@heroui/popover": "^2.3.17",
-    "@heroui/system": "^2.4.13",
-    "@heroui/theme": "^2.4.13",
+    "@heroui/drawer": "2.2.7",
+    "@heroui/popover": "2.3.9",
+    "@heroui/system": "2.4.6",
+    "@heroui/theme": "2.4.5",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/mdx": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
