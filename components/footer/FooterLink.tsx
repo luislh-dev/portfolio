@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { FooterLinkProps } from './types';
 
-function FooterLink({ title, href, label, isInternal = true }: FooterLinkProps) {
+function FooterLink({ title, href, label, isInternal = true }: Readonly<FooterLinkProps>) {
   if (label === 'soon') {
     return (
       <span className="footer-link footer-link--soon">

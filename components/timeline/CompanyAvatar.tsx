@@ -3,7 +3,7 @@ interface CompanyAvatarProps {
   className?: string;
 }
 
-export function CompanyAvatar({ company, className = '' }: CompanyAvatarProps) {
+export function CompanyAvatar({ company, className = '' }: Readonly<CompanyAvatarProps>) {
   return (
     <div
       className={`flex h-20 w-20 items-center justify-center rounded-full bg-blue-500 ${className}`}

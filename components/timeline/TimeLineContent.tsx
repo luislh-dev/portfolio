@@ -10,7 +10,7 @@ interface TimeLineContentProps {
   tools: ToolId[];
 }
 
-export function TimeLineContent(props: TimeLineContentProps) {
+export function TimeLineContent(props: Readonly<TimeLineContentProps>) {
   const { duration, workModel, employmentType, responsibilities, tools } = props;
 
   const usedTools = dataTools.filter((tool) => tools.includes(tool.id));

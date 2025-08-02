@@ -1,9 +1,8 @@
 interface SectionContentProps {
   children: React.ReactNode;
-  isMasked?: boolean;
 }
 
-function SectionContent({ children }: SectionContentProps) {
+function SectionContent({ children }: Readonly<SectionContentProps>) {
   return (
     <div className="background-grid background-grid--fade-out">
       <div className="relative">{children}</div>

@@ -4,7 +4,7 @@ interface GenericLandingWireframeProps {
   name?: string;
 }
 
-function GenericLandingWireframe({ name }: GenericLandingWireframeProps) {
+function GenericLandingWireframe({ name }: Readonly<GenericLandingWireframeProps>) {
   return (
     <div
       role="presentation"

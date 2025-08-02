@@ -5,7 +5,7 @@ interface CardProps extends PropsWithChildren {
   className?: string;
 }
 
-export function Card({ children, className }: CardProps) {
+export function Card({ children, className }: Readonly<CardProps>) {
   return (
     <div className={clsx('rounded-lg bg-white p-4 shadow-lg dark:bg-black', className)}>
       {children}

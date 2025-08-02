@@ -8,7 +8,7 @@ interface BrowserTabProps {
   onClick?: () => void;
 }
 
-function BrowserTab({ icon, title, isActive, onClick = () => {} }: BrowserTabProps) {
+function BrowserTab({ icon, title, isActive, onClick = () => {} }: Readonly<BrowserTabProps>) {
   return (
     <div
       className={`flex h-6 items-center truncate rounded-lg ${

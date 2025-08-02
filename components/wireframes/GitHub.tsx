@@ -7,7 +7,12 @@ interface GitHubWireframeProps {
   description: string;
 }
 
-function GitHubWireframe({ author, license, repository, description }: GitHubWireframeProps) {
+function GitHubWireframe({
+  author,
+  license,
+  repository,
+  description,
+}: Readonly<GitHubWireframeProps>) {
   return (
     <div className="h-full w-full bg-white p-4 text-sm text-slate-600 dark:bg-slate-900 dark:text-slate-400">
       <div className="flex items-center gap-1">
