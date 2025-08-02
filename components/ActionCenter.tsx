@@ -1,10 +1,8 @@
+import { Dark, Eye, EyeSlash, Light } from '@components/Icons';
+import useFocusMode from '@hooks/useFocusMode';
 import clsx from 'clsx';
 import { m } from 'framer-motion';
 import { useTheme } from 'next-themes';
-
-import { Dark, Eye, EyeSlash, Light } from '@components/Icons';
-
-import useFocusMode from '@hooks/useFocusMode';
 
 import type { PropsWithChildren, ReactElement } from 'react';
 
@@ -35,7 +33,7 @@ function ActionCenterButton({
 }: PropsWithChildren<ActionCenterButtonProps>) {
   return (
     <button
-      type='button'
+      type="button"
       onClick={onClick}
       className={clsx(
         'relative flex flex-1 flex-col justify-between overflow-hidden rounded-xl p-4 transition-colors',
@@ -60,8 +58,8 @@ function ActionCenter() {
   return (
     <m.div
       className={clsx('flex flex-col gap-2')}
-      initial='hide'
-      animate='show'
+      initial="hide"
+      animate="show"
       transition={{ staggerChildren: 0.06 }}
     >
       <m.div className={clsx('px-2 text-xl font-bold')} variants={animation}>

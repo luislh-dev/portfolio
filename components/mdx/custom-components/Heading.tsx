@@ -9,10 +9,10 @@ export function H2({ children }: Props) {
   const slug = getSlug(children);
 
   return (
-    <h2 id={slug} data-ss={slug} data-ss-mt={96} className='mdx-heading mdx-heading--h2 group'>
+    <h2 id={slug} data-ss={slug} data-ss-mt={96} className="mdx-heading mdx-heading--h2 group">
       <a
         href={`#${slug}`}
-        className='mdx-heading__anchor group-hover:opacity-100'
+        className="mdx-heading__anchor group-hover:opacity-100"
         aria-labelledby={slug}
         title={`Link to ${children}`}
       >
@@ -27,10 +27,10 @@ export function H3({ children }: Props) {
   const slug = getSlug(children);
 
   return (
-    <h3 id={slug} data-ss={slug} data-ss-mt={96} className='mdx-heading mdx-heading--h3 group'>
+    <h3 id={slug} data-ss={slug} data-ss-mt={96} className="mdx-heading mdx-heading--h3 group">
       <a
         href={`#${slug}`}
-        className='mdx-heading__anchor group-hover:opacity-100'
+        className="mdx-heading__anchor group-hover:opacity-100"
         aria-labelledby={slug}
       >
         <Hashtag />

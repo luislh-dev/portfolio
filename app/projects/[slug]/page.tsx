@@ -1,8 +1,8 @@
+import { readdir } from 'node:fs/promises';
+import path from 'node:path';
 import ClientMDXRemote from '@components/ClientMDXRemote';
 import ProjectLayout from '@contents-layouts/project';
 import { loadMDXContent } from '@lib/load-mdx-content';
-import { readdir } from 'node:fs/promises';
-import path from 'node:path';
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const projectsDir = path.join(process.cwd(), 'contents/projects');

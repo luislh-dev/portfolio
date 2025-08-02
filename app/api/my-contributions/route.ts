@@ -1,6 +1,6 @@
 import { IMPORTANT_REPOS } from '@/data/ImportantRepos';
-import { GitHubSearchIssuesResponse } from '@/types/github';
 import type { MyContribution, MyContributionResponse } from '@/types/contributions';
+import type { GitHubSearchIssuesResponse } from '@/types/github';
 
 export async function GET(): Promise<Response> {
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN;

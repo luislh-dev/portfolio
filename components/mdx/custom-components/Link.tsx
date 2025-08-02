@@ -17,27 +17,27 @@ export function Link({ children, href }: Props) {
   switch (type) {
     case 'external':
       return (
-        <a href={href} target='_blank' rel='noreferrer nofollow' className='link'>
+        <a href={href} target="_blank" rel="noreferrer nofollow" className="link">
           {children}
           <ExternalLink />
         </a>
       );
     case 'mail':
       return (
-        <a href={href} className='link'>
+        <a href={href} className="link">
           <Mail />
           {children}
         </a>
       );
     case 'hash':
       return (
-        <a href={href} className='link'>
+        <a href={href} className="link">
           {children}
         </a>
       );
     default:
       return (
-        <NextLink href={href} className='link'>
+        <NextLink href={href} className="link">
           {children}
         </NextLink>
       );

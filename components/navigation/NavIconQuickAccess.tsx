@@ -1,24 +1,22 @@
-import clsx from 'clsx';
-
 import { QuickAccess } from '@components/Icons';
 import { Kbd } from '@components/Kbd';
-
 import useGlobal from '@hooks/useGlobal';
+import clsx from 'clsx';
 
 function NavIconQuickAccess() {
   const { setIsQuickAccessOpen } = useGlobal();
 
   return (
     <button
-      type='button'
+      type="button"
       className={clsx(
         'ml-1 flex h-9 w-9 items-center justify-center gap-2 rounded-xl bg-slate-300/50 text-slate-800',
         'xl:w-auto xl:px-3',
         'hover:bg-slate-300/70 sm:ml-0',
         'dark:bg-slate-800/50 dark:text-slate-100 dark:hover:bg-slate-700/50'
       )}
-      aria-label='Open Quick Access'
-      title='Open Quick Access'
+      aria-label="Open Quick Access"
+      title="Open Quick Access"
       onClick={() => {
         setIsQuickAccessOpen(true);
       }}

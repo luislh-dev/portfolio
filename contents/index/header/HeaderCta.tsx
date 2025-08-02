@@ -22,7 +22,7 @@ interface HeaderCtaProps {
 
 function ButtonContactMe() {
   return (
-    <Link href='/contact' className='button button--solid md:button--big min-w-[128px]'>
+    <Link href="/contact" className="button button--solid md:button--big min-w-[128px]">
       Contáctame 📩
     </Link>
   );
@@ -31,12 +31,12 @@ function ButtonContactMe() {
 function ButtonResume() {
   return (
     <a
-      target='_blank'
-      rel='noreferrer nofollow'
-      href='https://cv.luislh.dev/'
-      className='button button--ghost md:button--big px-2 md:px-2'
+      target="_blank"
+      rel="noreferrer nofollow"
+      href="https://cv.luislh.dev/"
+      className="button button--ghost md:button--big px-2 md:px-2"
     >
-      <DocumentIcon className='h-5 w-5' />
+      <DocumentIcon className="h-5 w-5" />
       CV
     </a>
   );
@@ -44,10 +44,10 @@ function ButtonResume() {
 
 function AvailableForHire() {
   return (
-    <div className='button button--ghost md:button--big pointer-events-none gap-2.5 px-2.5 text-blue-500 dark:text-blue-400 md:px-2.5'>
-      <div className='relative flex h-2 w-2'>
-        <span className='absolute -left-1 -top-1 inline-flex h-4 w-4 animate-ping rounded-full bg-blue-600 opacity-75 dark:bg-blue-300' />
-        <span className='relative inline-flex h-2 w-2 rounded-full bg-blue-500 dark:bg-blue-400' />
+    <div className="button button--ghost md:button--big pointer-events-none gap-2.5 px-2.5 text-blue-500 dark:text-blue-400 md:px-2.5">
+      <div className="relative flex h-2 w-2">
+        <span className="absolute -left-1 -top-1 inline-flex h-4 w-4 animate-ping rounded-full bg-blue-600 opacity-75 dark:bg-blue-300" />
+        <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500 dark:bg-blue-400" />
       </div>
       DISPONIBLE PARA TRABAJAR
     </div>
@@ -82,12 +82,12 @@ function HeaderCta({ isFree = true, isFreeAnimationDuration = 4 }: Readonly<Head
   }
 
   return (
-    <m.div className='flex gap-2' initial='hide' animate='show'>
-      <m.div className='relative z-20' variants={animation} transition={{ delay: 0.4 }}>
+    <m.div className="flex gap-2" initial="hide" animate="show">
+      <m.div className="relative z-20" variants={animation} transition={{ delay: 0.4 }}>
         <ButtonContactMe />
       </m.div>
       {isFree ? (
-        <m.div variants={animation} transition={{ delay: 2.8 }} className='relative z-10'>
+        <m.div variants={animation} transition={{ delay: 2.8 }} className="relative z-10">
           <m.div
             variants={isFreeVariants}
             transition={{ delay: isFreeAnimationDuration + 1.5, duration: 0.4 }}
@@ -95,7 +95,7 @@ function HeaderCta({ isFree = true, isFreeAnimationDuration = 4 }: Readonly<Head
             <AvailableForHire />
           </m.div>
           <m.div
-            className='absolute left-0 top-0'
+            className="absolute left-0 top-0"
             initial={{ x: -48, opacity: 0, pointerEvents: 'none' }}
             animate={{ x: 0, opacity: 1, pointerEvents: 'auto' }}
             transition={{ delay: isFreeAnimationDuration + 1.6, duration: 0.4 }}

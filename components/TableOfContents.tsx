@@ -1,17 +1,21 @@
 'use client';
 
-import clsx from 'clsx';
-import { m } from 'framer-motion';
-
 import useOnScroll from '@hooks/useOnScroll';
 import useScrollSpy from '@hooks/useScrollSpy';
 import type { TTableOfContentsItem } from '@types';
+import clsx from 'clsx';
+import { m } from 'framer-motion';
 
 interface TableOfContentsLinkProps extends TTableOfContentsItem {
   active?: boolean;
 }
 
-function TableOfContentsLink({ title, depth, slug, active = false }: Readonly<TableOfContentsLinkProps>) {
+function TableOfContentsLink({
+  title,
+  depth,
+  slug,
+  active = false,
+}: Readonly<TableOfContentsLinkProps>) {
   return (
     <a
       className={clsx('toc-link', {
@@ -39,7 +43,7 @@ function TableOfContents({ items = [] }: Readonly<TableOfContensProps>) {
 
   return (
     <nav
-      aria-label='Page table of contents'
+      aria-label="Page table of contents"
       className={clsx(
         'rounded-xl border border-divider-light bg-white',
         'dark:border-divider-dark dark:bg-[#161e31]'
@@ -51,7 +55,7 @@ function TableOfContents({ items = [] }: Readonly<TableOfContensProps>) {
           'dark:border-divider-dark'
         )}
       >
-        <h2 className={clsx('text-slate-700', 'dark:text-slate-300')} id='table-of-contents'>
+        <h2 className={clsx('text-slate-700', 'dark:text-slate-300')} id="table-of-contents">
           <span className={clsx('lg:hidden', 'xl:inline')}>Tabla de </span>Contenido
         </h2>
         <m.div
@@ -65,7 +69,7 @@ function TableOfContents({ items = [] }: Readonly<TableOfContensProps>) {
             )}
             tabIndex={isScrolled ? 0 : -1}
             onClick={handleScrollToTopClick}
-            type='button'
+            type="button"
           >
             Ir arriba
           </button>

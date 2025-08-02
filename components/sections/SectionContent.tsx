@@ -5,8 +5,8 @@ interface SectionContentProps {
 
 function SectionContent({ children }: SectionContentProps) {
   return (
-    <div className='background-grid background-grid--fade-out'>
-      <div className='relative'>{children}</div>
+    <div className="background-grid background-grid--fade-out">
+      <div className="relative">{children}</div>
     </div>
   );
 }

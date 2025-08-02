@@ -1,4 +1,4 @@
-import { LazyMotion, MotionConfig as MotionProvider, domAnimation } from 'framer-motion';
+import { domAnimation, LazyMotion, MotionConfig as MotionProvider } from 'framer-motion';
 import type { JSX } from 'react';
 
 interface FramerMotionProviderProps {
@@ -7,7 +7,7 @@ interface FramerMotionProviderProps {
 
 function FramerMotionProvider({ children }: Readonly<FramerMotionProviderProps>) {
   return (
-    <MotionProvider reducedMotion='user'>
+    <MotionProvider reducedMotion="user">
       <LazyMotion strict features={domAnimation}>
         {children}
       </LazyMotion>

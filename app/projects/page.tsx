@@ -1,5 +1,5 @@
-import PageLayout from '@contents-layouts/Page';
 import ProjectsContents from '@contents/projects';
+import PageLayout from '@contents-layouts/Page';
 
 export default function Page() {
   return (

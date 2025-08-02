@@ -6,7 +6,7 @@ interface LogoProps {
 
 function Logo({ active = false }: Readonly<LogoProps>) {
   return (
-    <div className='flex items-center gap-1.5 font-[1000] leading-none'>
+    <div className="flex items-center gap-1.5 font-[1000] leading-none">
       <div
         className={clsx(
           'border-box flex h-8 w-8 items-center justify-center rounded-xl border-2',
@@ -25,7 +25,7 @@ function Logo({ active = false }: Readonly<LogoProps>) {
         />
       </div>
       <div className={clsx('-mt-1 hidden text-xl', 'sm:block')}>
-        <span className='text-slate-900 dark:text-slate-200'>luislh</span>
+        <span className="text-slate-900 dark:text-slate-200">luislh</span>
         <span className={clsx('text-blue-600', 'dark:text-blue-500')}>dev</span>
       </div>
     </div>

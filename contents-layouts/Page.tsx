@@ -20,7 +20,7 @@ function PageLayout({
         caption={caption}
         headerImage={headerImage}
       />
-      <div className='scroll-mt-[86px]' id='main-contents'>
+      <div className="scroll-mt-[86px]" id="main-contents">
         {children}
       </div>
     </>

@@ -1,8 +1,7 @@
 'use client';
 
-import { type JSX, useEffect } from 'react';
-
 import useFocusMode from '@hooks/useFocusMode';
+import { type JSX, useEffect } from 'react';
 
 interface FocusModeProviderProps {
   children: JSX.Element;

@@ -17,7 +17,7 @@ function HeaderTitle() {
   return (
     <div>
       <m.div
-        className='mb-1 flex items-center gap-1 text-2xl text-slate-600 dark:text-slate-400 md:mb-0 md:gap-2 md:text-4xl'
+        className="mb-1 flex items-center gap-1 text-2xl text-slate-600 dark:text-slate-400 md:mb-0 md:gap-2 md:text-4xl"
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.1 }}
@@ -39,9 +39,9 @@ function HeaderTitle() {
           }}
         >
           <Image
-            className='w-7 md:w-10'
-            alt='Love-you Gesture'
-            src='/emojis/waving-hand.png'
+            className="w-7 md:w-10"
+            alt="Love-you Gesture"
+            src="/emojis/waving-hand.png"
             width={48}
             height={48}
             onLoad={() => {
@@ -51,33 +51,33 @@ function HeaderTitle() {
                 rotate: 0,
               });
             }}
-            loading='eager'
+            loading="eager"
             priority
           />
         </m.div>
       </m.div>
-      <span className='text-slate-700 dark:text-slate-300'>
+      <span className="text-slate-700 dark:text-slate-300">
         <m.span
-          className='mb-4 block text-[2.5rem] font-[1000] leading-none md:mb-6 md:text-7xl'
+          className="mb-4 block text-[2.5rem] font-[1000] leading-none md:mb-6 md:text-7xl"
           initial={animation.hide}
           animate={animation.show}
           transition={{ delay: 0.2 }}
         >
-          Soy <strong className='text-blue-600 dark:text-blue-500'>Luis</strong> Lopez,{' '}
+          Soy <strong className="text-blue-600 dark:text-blue-500">Luis</strong> Lopez,{' '}
         </m.span>
         <m.h1
-          className='block text-base text-slate-600 dark:text-slate-400 md:text-xl'
+          className="block text-base text-slate-600 dark:text-slate-400 md:text-xl"
           initial={animation.hide}
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
           <span>un</span>{' '}
-          <strong className='font-bold lowercase text-slate-700 dark:text-slate-300'>
+          <strong className="font-bold lowercase text-slate-700 dark:text-slate-300">
             Desarrollador Full-Stack
           </strong>{' '}
           apasionado por crear soluciones{' '}
-          <span className='block'>eficientes e innovadoras, siempre dispuesto a enfrentar</span>
-          <span className='block'> nuevos desafíos y superar mis límites.</span>
+          <span className="block">eficientes e innovadoras, siempre dispuesto a enfrentar</span>
+          <span className="block"> nuevos desafíos y superar mis límites.</span>
         </m.h1>
       </span>
     </div>

@@ -20,15 +20,20 @@ interface PageHeaderProps {
   headerImage?: ReactNode;
 }
 
-function PageHeader({ title, description, caption = '', headerImage = null }: Readonly<PageHeaderProps>) {
+function PageHeader({
+  title,
+  description,
+  caption = '',
+  headerImage = null,
+}: Readonly<PageHeaderProps>) {
   return (
     <header
-      id='page-header'
-      className='background-grid background-grid--fade-out z-10 mb-10 border-b border-divider-light pb-10 pt-32 dark:border-divider-dark md:mb-0 md:border-none md:pb-20 md:pt-40'
+      id="page-header"
+      className="background-grid background-grid--fade-out z-10 mb-10 border-b border-divider-light pb-10 pt-32 dark:border-divider-dark md:mb-0 md:border-none md:pb-20 md:pt-40"
     >
       {headerImage && (
-        <div className='content-wrapper absolute inset-0 overflow-hidden'>
-          <div className='background-image background-image--fade-out pointer-events-none absolute inset-0 hidden select-none lg:block'>
+        <div className="content-wrapper absolute inset-0 overflow-hidden">
+          <div className="background-image background-image--fade-out pointer-events-none absolute inset-0 hidden select-none lg:block">
             <div className={clsx('content-wrapper relative h-full')}>
               <div className={clsx('absolute -top-24 bottom-0 right-0')}>{headerImage}</div>
             </div>

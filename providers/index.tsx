@@ -10,7 +10,7 @@ import { ThemeProvider } from './ThemeProvider';
 function Provider({ children }: Readonly<PropsWithChildren>) {
   return (
     <FramerMotionProvider>
-      <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <HeroUIProvider>
           <FocusModeProvider>
             <GlobalStateProvider>{children}</GlobalStateProvider>

@@ -1,7 +1,7 @@
 'use client';
 
-import PageHeader from '@components/PageHeader';
 import components from '@components/mdx/custom-components';
+import PageHeader from '@components/PageHeader';
 import WithTableOfContents from '@layouts/WithTableOfContents';
 import Contact from '@markdown/contact.mdx';
 import type { TTableOfContentsItem } from '@types';
@@ -23,8 +23,8 @@ export default function Page() {
   return (
     <>
       <PageHeader
-        title='Contacto'
-        description='Ponte en contacto conmigo en cualquier momento, a través de las redes sociales, correo electrónico o número de teléfono.'
+        title="Contacto"
+        description="Ponte en contacto conmigo en cualquier momento, a través de las redes sociales, correo electrónico o número de teléfono."
       />
       <WithTableOfContents tableOfContents={tableOfContents}>
         <Contact components={components} />

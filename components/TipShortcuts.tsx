@@ -1,9 +1,8 @@
+import { Keyboard } from '@components/Icons';
+import { Kbd } from '@components/Kbd';
 import clsx from 'clsx';
 import { m } from 'framer-motion';
 import { Fragment } from 'react';
-
-import { Keyboard } from '@components/Icons';
-import { Kbd } from '@components/Kbd';
 
 const shortcuts: Array<{
   title: string;
@@ -42,8 +41,8 @@ const animation = {
 function TipShortcuts() {
   return (
     <m.div
-      initial='hide'
-      animate='show'
+      initial="hide"
+      animate="show"
       transition={{ delayChildren: 0.7, staggerChildren: 0.14 }}
       className={clsx('')}
     >

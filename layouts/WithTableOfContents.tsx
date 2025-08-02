@@ -1,8 +1,6 @@
-import clsx from 'clsx';
-
 import TableOfContents from '@components/TableOfContents';
-
 import type { TTableOfContents } from '@types';
+import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 
 interface PageWithMDXProps {
@@ -20,7 +18,7 @@ function PageWithMDX({ tableOfContents, children = null }: PropsWithChildren<Pag
         </div>
         <div
           className={clsx('mdx-contents min-w-0 flex-1 scroll-mt-[86px]')}
-          id='main-contents'
+          id="main-contents"
           data-ss-wrapper
         >
           {children}

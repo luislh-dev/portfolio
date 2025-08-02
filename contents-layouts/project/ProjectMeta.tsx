@@ -11,49 +11,49 @@ function ProjectMeta({ githubUrl, npmUrl, demoUrl, landingUrl }: Readonly<Projec
   if (!githubUrl && !npmUrl && !demoUrl && !landingUrl) return null;
 
   return (
-    <div className='content-wrapper mb-10'>
-      <div className='flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-600 dark:text-slate-500'>
+    <div className="content-wrapper mb-10">
+      <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-600 dark:text-slate-500">
         {githubUrl && (
           <a
             href={githubUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='button button--soft'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button--soft"
           >
-            <Github className='h-5 w-5' />
+            <Github className="h-5 w-5" />
             GitHub
           </a>
         )}
         {npmUrl && (
           <a
             href={npmUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='button button--soft'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button--soft"
           >
-            <Npm className='h-5 w-5' />
+            <Npm className="h-5 w-5" />
             NPM
           </a>
         )}
         {demoUrl && (
           <a
             href={demoUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='button button--soft'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button--soft"
           >
-            <Globe className='h-5 w-5' />
+            <Globe className="h-5 w-5" />
             Demo
           </a>
         )}
         {landingUrl && (
           <a
             href={landingUrl}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='button button--soft'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button--soft"
           >
-            <Globe className='h-5 w-5' />
+            <Globe className="h-5 w-5" />
             Landing
           </a>
         )}

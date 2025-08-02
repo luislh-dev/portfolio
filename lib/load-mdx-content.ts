@@ -1,9 +1,9 @@
+import { readFile } from 'node:fs/promises';
 import { generateSlug } from '@helpers/mdx';
 import type { TProjectFrontMatter } from '@types';
 import matter from 'gray-matter';
 import { toString as convertString } from 'mdast-util-to-string';
 import { serialize } from 'next-mdx-remote/serialize';
-import { readFile } from 'node:fs/promises';
 import rehypeSlug from 'rehype-slug';
 import { remark } from 'remark';
 import { visit } from 'unist-util-visit';

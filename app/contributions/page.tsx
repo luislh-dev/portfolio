@@ -1,7 +1,7 @@
 'use client';
 
-import MyContributions from "@components/MyContributions";
-import PageLayout from "@contents-layouts/Page";
+import MyContributions from '@components/MyContributions';
+import PageLayout from '@contents-layouts/Page';
 
 export default function Page() {
   return (
@@ -12,7 +12,7 @@ export default function Page() {
           'Mis contribuciones a proyectos de código abierto y mis participaciones en comunidades de desarrollo de software.',
       }}
     >
-        <MyContributions />
+      <MyContributions />
     </PageLayout>
   );
 }

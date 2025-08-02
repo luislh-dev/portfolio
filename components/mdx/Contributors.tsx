@@ -32,20 +32,20 @@ export default function Contributors({ owner, repo }: Readonly<ContribuitorProps
   }, [owner, repo]);
 
   return (
-    <div className='flex gap-4'>
+    <div className="flex gap-4">
       {loading ? (
         // Skeleton loading state
         Array.from({ length: 2 }).map(() => (
-          <Skeleton key={crypto.randomUUID()} shape='circle' w={48} h={48} isLoading={loading} />
+          <Skeleton key={crypto.randomUUID()} shape="circle" w={48} h={48} isLoading={loading} />
         ))
       ) : contributors.length > 0 ? (
         contributors.map((contributor) => (
-          <div key={contributor.id} className='flex'>
-            <a href={contributor.html_url} target='_blank' rel='noopener noreferrer'>
+          <div key={contributor.id} className="flex">
+            <a href={contributor.html_url} target="_blank" rel="noopener noreferrer">
               <Image
                 src={contributor.avatar_url}
                 alt={contributor.login}
-                className='rounded-full'
+                className="rounded-full"
                 width={48}
                 height={48}
               />
@@ -53,7 +53,7 @@ export default function Contributors({ owner, repo }: Readonly<ContribuitorProps
           </div>
         ))
       ) : (
-        <p className='text-gray-500'>No hay contribuidores disponibles.</p>
+        <p className="text-gray-500">No hay contribuidores disponibles.</p>
       )}
     </div>
   );

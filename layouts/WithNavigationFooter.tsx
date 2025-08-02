@@ -1,7 +1,7 @@
-import QuickAccess from '@components/QuickAccess';
-import Shortcuts from '@components/Shortcuts';
 import Footer from '@components/footer';
 import Navigation from '@components/navigation';
+import QuickAccess from '@components/QuickAccess';
+import Shortcuts from '@components/Shortcuts';
 import type { PropsWithChildren } from 'react';
 
 function WithNavigationFooter({ children }: Readonly<PropsWithChildren>) {

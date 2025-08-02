@@ -15,18 +15,18 @@ function HeaderImage() {
   }, [controlsHeaderImage]);
 
   return (
-    <div className='relative h-[590px] w-[603px]'>
-      <div className='absolute bottom-0 right-0 rotate-[14deg] overflow-hidden'>
+    <div className="relative h-[590px] w-[603px]">
+      <div className="absolute bottom-0 right-0 rotate-[14deg] overflow-hidden">
         <m.div
           animate={controlsHeaderImage}
           initial={{ clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' }}
         >
           <Image
-            alt='Luis Lopez foto'
-            src='/images/me.webp'
+            alt="Luis Lopez foto"
+            src="/images/me.webp"
             width={500}
             height={538}
-            className='hidden dark:brightness-[.82] lg:block'
+            className="hidden dark:brightness-[.82] lg:block"
             quality={100}
             priority
           />

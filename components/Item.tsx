@@ -1,11 +1,11 @@
 'use client';
 
-import { PropsWithChildren } from 'react';
 import clsx from 'clsx';
+import type { PropsWithChildren } from 'react';
 
 export function Item({ children = null }: Readonly<PropsWithChildren>) {
   return (
-        <article className={clsx('', 'md:pb-16')}>
+    <article className={clsx('', 'md:pb-16')}>
       <div
         className={clsx(
           'pointer-events-none sticky top-[86px] -ml-8 pb-12',
