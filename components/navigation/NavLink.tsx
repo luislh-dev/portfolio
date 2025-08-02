@@ -9,7 +9,7 @@ export type NavLinkProps = {
   icon?: ReactNode;
 };
 
-function NavLink({ title, href, icon = null }: NavLinkProps) {
+function NavLink({ title, href, icon = null }: Readonly<NavLinkProps>) {
   return (
     <Link href={href} className={clsx('nav-link')}>
       {title}

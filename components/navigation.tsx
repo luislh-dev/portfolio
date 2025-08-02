@@ -7,6 +7,13 @@ import NavIcon from './navigation/NavIcon';
 import NavIconQuickAccess from './navigation/NavIconQuickAccess';
 import NavLink from './navigation/NavLink';
 import NavLogo from './navigation/NavLogo';
+import { NavLinkDropdown } from './navigation/NavLinkDropdown';
+import { NavLinkExpanded } from './navigation/NavLinkExpanded';
+
+const workLinks = [
+  {title: "Experiencia", href: "/experience"},
+  {title: "Contacto", href: "/contact"}
+]
 
 function NavBar() {
   const [isScrolling, setIsScrolling] = useState(false);
@@ -40,18 +47,21 @@ function NavBar() {
       />
       <div className={clsx('h-2', [isScrolling && ['-mt-2']])} />
       <div className='content-wrapper-max'>
-        <div className='relative z-50 flex h-16 items-center justify-between px-2 text-sm md:px-4'>
-          <nav className='flex md:gap-2'>
+        <div className='relative z-50 flex h-16 items-center justify-between text-sm md:px-4'>
+          <nav className='flex'>
             <NavLogo href='/' title='Home' />
-            <ul className='flex items-center md:gap-1'>
+            <ul className='flex items-center'>
               <li>
                 <NavLink title='Proyectos' href='/projects' />
               </li>
               <li>
-                <NavLink title='Experiencia' href='/experience' />
+                <NavLink title='Contribuciones' href='/contributions' />
               </li>
-              <li>
-                <NavLink title='Contacto' href='/contact' />
+              <li className='lg:hidden'>
+                <NavLinkDropdown title='Trabajo' items={workLinks} />
+              </li>
+              <li className={clsx('hidden lg:block')} data-accent="blue">
+                <NavLinkExpanded title="Trabajo" items={workLinks} />
               </li>
             </ul>
           </nav>
