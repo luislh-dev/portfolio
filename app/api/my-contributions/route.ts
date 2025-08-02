@@ -88,7 +88,11 @@ export async function GET(): Promise<Response> {
       contributions,
     };
 
-    return Response.json(responseData);
+    return Response.json(responseData, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      },
+    });
   } catch (error) {
     console.error('Error al obtener contribuciones:', error);
     return new Response('Error interno del servidor', { status: 500 });
