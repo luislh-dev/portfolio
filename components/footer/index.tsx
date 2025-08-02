@@ -23,8 +23,7 @@ function Footer() {
                     },
                     {
                       title: 'Experiencia',
-                      href: '/experience',
-                      label: 'new',
+                      href: '/experience'
                     },
                   ]}
                 />
@@ -33,13 +32,12 @@ function Footer() {
                   links={[
                     {
                       title: 'Proyectos',
-                      href: '/projects',
-                      label: 'new',
+                      href: '/projects'
                     },
                     {
                       title: 'Contribuciones',
                       href: '/contributions',
-                      label: 'soon',
+                      label: 'new',
                     },
                   ]}
                 />
